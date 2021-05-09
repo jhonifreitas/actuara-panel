@@ -26,7 +26,7 @@ export class SidebarComponent implements OnInit {
   @Output() toggleSideBarForMe: EventEmitter<any> = new EventEmitter();
 
   menuItems: MenuItem[] = [
-    { title: 'Autorização', icon: 'verified_user', hidden: false, subItems: [
+    { title: 'Administrações', icon: 'verified_user', hidden: false, subItems: [
       { title: 'Usuários', url: '/administracao/usuarios', icon: 'person', hidden: false, permission: {
         page: Page.UserPage, role: PageRole.CanList}
       },

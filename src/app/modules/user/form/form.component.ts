@@ -19,20 +19,20 @@ import { GroupService } from 'src/app/services/firebase/group.service';
 export class UserFormComponent implements OnInit {
 
   saving = false;
-  groups: Group[];
-  image: FileUpload;
   togglePass = true;
+  image?: FileUpload;
+  groups: Group[] = [];
   formGroup: FormGroup;
-  permissions: {id: string; name: string; pageId: string; roleId: string}[];
+  permissions: {id: string; name: string; pageId: string; roleId: string}[] = [];
 
   constructor(
     private _util: UtilService,
     private _user: UserService,
     private _group: GroupService,
     private formBuilder: FormBuilder,
-    private dialogRef: MatDialogRef<UserFormComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: User = new User()
-    ) {
+    @Inject(MAT_DIALOG_DATA) public data = new User(),
+    private dialogRef: MatDialogRef<UserFormComponent>
+  ) {
     this.formGroup = this.formBuilder.group({
       name: new FormControl('', Validators.required),
       email: new FormControl('', [Validators.required, Validators.email]),
@@ -69,7 +69,7 @@ export class UserFormComponent implements OnInit {
   }
 
   get controls() {
-    return this.formGroup.controls;
+    return this.formGroup.controls as {[key: string]: FormControl};
   }
 
   async getGroups(): Promise<void> {
@@ -86,14 +86,14 @@ export class UserFormComponent implements OnInit {
       }
   }
 
-  validatorPassword(group: FormGroup): ValidatorFn {
-    const password = group.get('password').value;
-    const confirmControl = group.get('confirmPass');
+  validatorPassword(group: FormGroup): ValidatorFn | null {
+    const password = group.controls.password.value;
+    const confirmControl = group.controls.confirmPass;
     let result: {
       required?: boolean;
       passNotSame?: boolean;
       minlength?: {actualLength: number; requiredLength: number};
-    } = null;
+    } | null = null;
 
     if (confirmControl.hasError('required')) result = {required: true};
     else if (password !== confirmControl.value) result = {passNotSame: true};
@@ -112,12 +112,12 @@ export class UserFormComponent implements OnInit {
   }
 
   async deleteImage(): Promise<void> {
-    if (!this.image.new)
+    if (this.image && !this.image.new)
       this._util.delete().then(async _ => {
         await this._user.deleteImage(this.data.id);
-        this.image = null;
+        this.image = undefined;
       }).catch(_ => {});
-    else this.image = null;
+    else this.image = undefined;
   }
 
   async onSubmit(): Promise<void> {
@@ -126,7 +126,7 @@ export class UserFormComponent implements OnInit {
       const value = this.formGroup.value;
       delete value.confirmPass;
       Object.assign(this.data, value);
-      this.data.permissions = value.permissions.map(index => {
+      this.data.permissions = value.permissions.map((index: number) => {
         return {page: this.permissions[index].pageId, role: this.permissions[index].roleId};
       });
 

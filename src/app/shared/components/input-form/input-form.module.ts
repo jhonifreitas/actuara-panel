@@ -11,15 +11,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
-// QUILL
-import { QuillModule } from 'ngx-quill';
-// MASK
-import { NgxMaskModule } from 'ngx-mask';
-// CURRENCY
-import { NgxCurrencyModule } from 'ngx-currency';
-// SELECT FILTER
-// import { MatSelectFilterModule } from 'mat-select-filter';
+import { QuillModule } from 'ngx-quill'; // QUILL
+import { NgxMaskModule } from 'ngx-mask'; // MASK
+import { NgxCurrencyModule } from 'ngx-currency'; // CURRENCY
+// import { MatSelectFilterModule } from 'mat-select-filter'; // SELECT FILTER
 
+// COMPONENT
 import { InputFormComponent } from './input-form.component';
 
 @NgModule({

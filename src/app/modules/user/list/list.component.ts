@@ -20,12 +20,12 @@ import { PermissionService } from 'src/app/services/permission.service';
 })
 export class UserListComponent implements OnInit {
 
-  @ViewChild(MatSort, {static: true}) sort: MatSort;
-  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
+  @ViewChild(MatSort, {static: true}) sort!: MatSort;
+  @ViewChild(MatPaginator, {static: true}) paginator!: MatPaginator;
 
-  filter: string;
   loading = true;
-  dataSource: MatTableDataSource<User>;
+  filter!: string;
+  dataSource!: MatTableDataSource<User>;
   displayedColumns: string[] = ['name', 'email', 'active', 'image', 'actions'];
 
   canAdd = this._permission.check(Page.UserPage, PageRole.CanAdd);

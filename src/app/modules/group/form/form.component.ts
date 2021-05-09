@@ -17,14 +17,14 @@ export class GroupFormComponent implements OnInit {
 
   saving = false;
   formGroup: FormGroup;
-  permissions: {id: string; name: string; pageId: string; roleId: string}[];
+  permissions: {id: string; name: string; pageId: string; roleId: string}[] = [];
 
   constructor(
     private _util: UtilService,
     private _group: GroupService,
     private formBuilder: FormBuilder,
-    private dialogRef: MatDialogRef<GroupFormComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: Group = new Group()
+    @Inject(MAT_DIALOG_DATA) public data = new Group(),
+    private dialogRef: MatDialogRef<GroupFormComponent>
   ) {
     this.formGroup = this.formBuilder.group({
       name: new FormControl('', Validators.required),
@@ -44,7 +44,7 @@ export class GroupFormComponent implements OnInit {
   }
 
   get controls() {
-    return this.formGroup.controls;
+    return this.formGroup.controls as {[key: string]: FormControl};
   }
 
   getPermissions() {
@@ -62,7 +62,7 @@ export class GroupFormComponent implements OnInit {
       this.saving = true;
       const value = this.formGroup.value;
       Object.assign(this.data, value);
-      this.data.permissions = value.permissions.map(index => {
+      this.data.permissions = value.permissions.map((index: number) => {
         return {page: this.permissions[index].pageId, role: this.permissions[index].roleId};
       });
       await this._group.save(this.data);

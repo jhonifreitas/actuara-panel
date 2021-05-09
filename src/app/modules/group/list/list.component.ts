@@ -20,12 +20,12 @@ import { PermissionService } from 'src/app/services/permission.service';
 })
 export class GroupListComponent implements OnInit {
 
-  @ViewChild(MatSort, {static: true}) sort: MatSort;
-  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
+  @ViewChild(MatSort, {static: true}) sort!: MatSort;
+  @ViewChild(MatPaginator, {static: true}) paginator!: MatPaginator;
 
-  filter: string;
   loading = true;
-  dataSource: MatTableDataSource<Group>;
+  filter!: string;
+  dataSource!: MatTableDataSource<Group>;
   displayedColumns: string[] = ['name', 'actions'];
 
   canAdd = this._permission.check(Page.GroupPage, PageRole.CanAdd);

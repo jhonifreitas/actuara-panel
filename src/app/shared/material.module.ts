@@ -12,6 +12,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -41,6 +42,7 @@ const MaterialModules = [
   MatSelectModule,
   MatRippleModule,
   MatDividerModule,
+  MatToolbarModule,
   MatSnackBarModule,
   MatExpansionModule,
   MatFormFieldModule,

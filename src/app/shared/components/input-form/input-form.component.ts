@@ -22,7 +22,7 @@ export class InputFormComponent {
   @Input() maxlength: number | string = '';
 
   // MASK
-  @Input() mask?: { format: string; prefix: string; suffix: string; dropSpecialCharacters: boolean };
+  @Input() mask?: { format?: string; prefix?: string; suffix?: string; dropSpecialCharacters?: boolean };
 
   // TEXTAREA
   @Input() rows = 1;

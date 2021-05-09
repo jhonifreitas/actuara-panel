@@ -23,17 +23,23 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { environment } from '../environments/environment';
+import { LayoutPanelModule } from './layout/panel/layout.module';
+import { DeleteModule } from './shared/components/delete/delete.module';
+import { LoadingModule } from './shared/components/loading/loading.module';
 
 registerLocaleData(localePt);
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
+    DeleteModule,
     BrowserModule,
+    LoadingModule,
     MatDialogModule,
     AppRoutingModule,
     HttpClientModule,
     MatSnackBarModule,
+    LayoutPanelModule,
     AngularFireAuthModule,
     BrowserAnimationsModule,
     AngularFireStorageModule,

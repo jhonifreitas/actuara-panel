@@ -12,7 +12,7 @@
       <ngx-dropzone-label>Arraste os arquivos aqui ou clique para fazer o upload.</ngx-dropzone-label>
     </ngx-dropzone>
     
-    <app-input label="Nome" [control]="controls.name" cdkFocusInitial="true"></app-input>
+    <app-input label="Nome" [control]="controls.name" [cdkFocus]="true"></app-input>
     <app-input label="E-mail" type="email" [control]="controls.email"></app-input>
     
     <div fxLayout="row" fxLayoutGap="20px">
