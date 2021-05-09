@@ -25,7 +25,7 @@ export class ClassFormComponent implements OnInit {
     private dialogRef: MatDialogRef<ClassFormComponent>
   ) {
     this.formGroup = this.formBuilder.group({
-      id: new FormControl('', Validators.required),
+      id: new FormControl('', [Validators.required, Validators.minLength(5), Validators.maxLength(5)]),
       name: new FormControl('', Validators.required),
     });
   }

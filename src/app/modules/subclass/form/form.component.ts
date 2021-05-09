@@ -29,7 +29,7 @@ export class SubClassFormComponent implements OnInit {
     private dialogRef: MatDialogRef<SubClassFormComponent>
   ) {
     this.formGroup = this.formBuilder.group({
-      id: new FormControl('', Validators.required),
+      id: new FormControl('', [Validators.required, Validators.minLength(7), Validators.maxLength(7)]),
       name: new FormControl('', Validators.required),
       classId: new FormControl('', Validators.required),
       consemaCodes: this.formBuilder.array([]),
@@ -43,6 +43,7 @@ export class SubClassFormComponent implements OnInit {
   }
 
   setData(): void {
+    for (const consemaCode of this.data.consemaCodes) this.addConsemaCode(consemaCode);
     this.formGroup.patchValue(this.data);
   }
 
