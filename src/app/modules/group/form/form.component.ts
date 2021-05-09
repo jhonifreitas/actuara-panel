@@ -23,8 +23,8 @@ export class GroupFormComponent implements OnInit {
     private _util: UtilService,
     private _group: GroupService,
     private formBuilder: FormBuilder,
-    @Inject(MAT_DIALOG_DATA) public data = new Group(),
-    private dialogRef: MatDialogRef<GroupFormComponent>
+    private dialogRef: MatDialogRef<GroupFormComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: Group = new Group()
   ) {
     this.formGroup = this.formBuilder.group({
       name: new FormControl('', Validators.required),

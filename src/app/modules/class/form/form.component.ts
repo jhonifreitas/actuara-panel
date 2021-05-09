@@ -21,8 +21,8 @@ export class ClassFormComponent implements OnInit {
     private _util: UtilService,
     private _class: ClassService,
     private formBuilder: FormBuilder,
-    @Inject(MAT_DIALOG_DATA) public data = new Class(),
-    private dialogRef: MatDialogRef<ClassFormComponent>
+    private dialogRef: MatDialogRef<ClassFormComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: Class = new Class()
   ) {
     this.formGroup = this.formBuilder.group({
       id: new FormControl('', [Validators.required, Validators.minLength(5), Validators.maxLength(5)]),

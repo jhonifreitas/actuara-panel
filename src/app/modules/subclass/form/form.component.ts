@@ -25,8 +25,8 @@ export class SubClassFormComponent implements OnInit {
     private _class: ClassService,
     private formBuilder: FormBuilder,
     private _subclass: SubClassService,
-    @Inject(MAT_DIALOG_DATA) public data = new SubClass(),
-    private dialogRef: MatDialogRef<SubClassFormComponent>
+    private dialogRef: MatDialogRef<SubClassFormComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: SubClass = new SubClass()
   ) {
     this.formGroup = this.formBuilder.group({
       id: new FormControl('', [Validators.required, Validators.minLength(7), Validators.maxLength(7)]),

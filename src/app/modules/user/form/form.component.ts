@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { FormGroup, FormBuilder, Validators, FormControl, ValidatorFn } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators, FormControl, AbstractControl } from '@angular/forms';
 
 import { User } from 'src/app/models/user';
 import { Group } from 'src/app/models/group';
@@ -30,8 +30,8 @@ export class UserFormComponent implements OnInit {
     private _user: UserService,
     private _group: GroupService,
     private formBuilder: FormBuilder,
-    @Inject(MAT_DIALOG_DATA) public data = new User(),
-    private dialogRef: MatDialogRef<UserFormComponent>
+    private dialogRef: MatDialogRef<UserFormComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: User = new User()
   ) {
     this.formGroup = this.formBuilder.group({
       name: new FormControl('', Validators.required),
@@ -86,19 +86,21 @@ export class UserFormComponent implements OnInit {
       }
   }
 
-  validatorPassword(group: FormGroup): ValidatorFn | null {
-    const password = group.controls.password.value;
-    const confirmControl = group.controls.confirmPass;
-    let result: {
-      required?: boolean;
-      passNotSame?: boolean;
-      minlength?: {actualLength: number; requiredLength: number};
-    } | null = null;
+  validatorPassword(control: AbstractControl): null {
+    const passwordControl = control.get('password');
+    const confirmControl = control.get('confirmPass');
+    if (passwordControl && confirmControl) {
+      let result: {
+        required?: boolean;
+        passNotSame?: boolean;
+        minlength?: {actualLength: number; requiredLength: number};
+      } | null = null;
 
-    if (confirmControl.hasError('required')) result = {required: true};
-    else if (password !== confirmControl.value) result = {passNotSame: true};
+      if (confirmControl.hasError('required')) result = {required: true};
+      else if (passwordControl.value !== confirmControl.value) result = {passNotSame: true};
 
-    confirmControl.setErrors(result);
+      confirmControl.setErrors(result);
+    }
     return null;
   }
 
