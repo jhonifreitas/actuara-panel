@@ -1,0 +1,2694 @@
+[
+  {
+    "id": "01113",
+    "name": "Cultivo de cereais"
+  },
+  {
+    "id": "01121",
+    "name": "Cultivo de algodão herbáceo e de outras fibras de lavoura temporária"
+  },
+  {
+    "id": "01130",
+    "name": "Cultivo de cana-de-açúcar"
+  },
+  {
+    "id": "01148",
+    "name": "Cultivo de fumo"
+  },
+  {
+    "id": "01156",
+    "name": "Cultivo de soja"
+  },
+  {
+    "id": "01164",
+    "name": "Cultivo de oleaginosas de lavoura temporária, exceto soja"
+  },
+  {
+    "id": "01199",
+    "name": "Cultivo de plantas de lavoura temporária não especificadas anteriormente"
+  },
+  {
+    "id": "01211",
+    "name": "Horticultura"
+  },
+  {
+    "id": "01229",
+    "name": "Cultivo de flores e plantas ornamentais"
+  },
+  {
+    "id": "01318",
+    "name": "Cultivo de laranja"
+  },
+  {
+    "id": "01326",
+    "name": "Cultivo de uva"
+  },
+  {
+    "id": "01334",
+    "name": "Cultivo de frutas de lavoura permanente, exceto laranja e uva"
+  },
+  {
+    "id": "01342",
+    "name": "Cultivo de café"
+  },
+  {
+    "id": "01351",
+    "name": "Cultivo de cacau"
+  },
+  {
+    "id": "01393",
+    "name": "Cultivo de plantas de lavoura permanente não especificadas anteriormente"
+  },
+  {
+    "id": "01415",
+    "name": "Produção de sementes certificadas"
+  },
+  {
+    "id": "01423",
+    "name": "Produção de mudas e outras formas de propagação vegetal, certificadas"
+  },
+  {
+    "id": "01512",
+    "name": "Criação de bovinos"
+  },
+  {
+    "id": "01521",
+    "name": "Criação de outros animais de grande porte"
+  },
+  {
+    "id": "01539",
+    "name": "Criação de caprinos e ovinos"
+  },
+  {
+    "id": "01547",
+    "name": "Criação de suínos"
+  },
+  {
+    "id": "01555",
+    "name": "Criação de aves"
+  },
+  {
+    "id": "01598",
+    "name": "Criação de animais não especificados anteriormente"
+  },
+  {
+    "id": "01610",
+    "name": "Atividades de apoio à agricultura"
+  },
+  {
+    "id": "01628",
+    "name": "Atividades de apoio à pecuária"
+  },
+  {
+    "id": "01636",
+    "name": "Atividades de pós-colheita"
+  },
+  {
+    "id": "01709",
+    "name": "Caça e serviços relacionados"
+  },
+  {
+    "id": "02101",
+    "name": "Produção florestal - florestas plantadas"
+  },
+  {
+    "id": "02209",
+    "name": "Produção florestal - florestas nativas"
+  },
+  {
+    "id": "02306",
+    "name": "Atividades de apoio à produção florestal"
+  },
+  {
+    "id": "03116",
+    "name": "Pesca em água salgada"
+  },
+  {
+    "id": "03124",
+    "name": "Pesca em água doce"
+  },
+  {
+    "id": "03213",
+    "name": "Aquicultura em água salgada e salobra"
+  },
+  {
+    "id": "03221",
+    "name": "Aquicultura em água doce"
+  },
+  {
+    "id": "05003",
+    "name": "Extração de carvão mineral"
+  },
+  {
+    "id": "06000",
+    "name": "Extração de petróleo e gás natural"
+  },
+  {
+    "id": "07103",
+    "name": "Extração de minério de ferro"
+  },
+  {
+    "id": "07219",
+    "name": "Extração de minério de alumínio"
+  },
+  {
+    "id": "07227",
+    "name": "Extração de minério de estanho"
+  },
+  {
+    "id": "07235",
+    "name": "Extração de minério de manganês"
+  },
+  {
+    "id": "07243",
+    "name": "Extração de minério de metais preciosos"
+  },
+  {
+    "id": "07251",
+    "name": "Extração de minerais radioativos"
+  },
+  {
+    "id": "07294",
+    "name": "Extração de minerais metálicos não ferrosos não especificados anteriormente"
+  },
+  {
+    "id": "08100",
+    "name": "Extração de pedra, areia e argila"
+  },
+  {
+    "id": "08916",
+    "name": "Extração de minerais para fabricação de adubos, fertilizantes e outros produtos químicos"
+  },
+  {
+    "id": "08924",
+    "name": "Extração e refino de sal marinho e sal-gema"
+  },
+  {
+    "id": "08932",
+    "name": "Extração de gemas (pedras preciosas e semipreciosas)"
+  },
+  {
+    "id": "08991",
+    "name": "Extração de minerais não metálicos não especificados anteriormente"
+  },
+  {
+    "id": "09106",
+    "name": "Atividades de apoio à extração de petróleo e gás natural"
+  },
+  {
+    "id": "09904",
+    "name": "Atividades de apoio à extração de minerais, exceto petróleo e gás natural"
+  },
+  {
+    "id": "10112",
+    "name": "Abate de reses, exceto suínos"
+  },
+  {
+    "id": "10121",
+    "name": "Abate de suínos, aves e outros pequenos animais"
+  },
+  {
+    "id": "10139",
+    "name": "Fabricação de produtos de carne"
+  },
+  {
+    "id": "10201",
+    "name": "Preservação do pescado e fabricação de produtos do pescado"
+  },
+  {
+    "id": "10317",
+    "name": "Fabricação de conservas de frutas"
+  },
+  {
+    "id": "10325",
+    "name": "Fabricação de conservas de legumes e outros vegetais"
+  },
+  {
+    "id": "10333",
+    "name": "Fabricação de sucos de frutas, hortaliças e legumes"
+  },
+  {
+    "id": "10414",
+    "name": "Fabricação de óleos vegetais em bruto, exceto óleo de milho"
+  },
+  {
+    "id": "10422",
+    "name": "Fabricação de óleos vegetais refinados, exceto óleo de milho"
+  },
+  {
+    "id": "10431",
+    "name": "Fabricação de margarina e outras gorduras vegetais e de óleos não comestíveis de animais"
+  },
+  {
+    "id": "10511",
+    "name": "Preparação do leite"
+  },
+  {
+    "id": "10520",
+    "name": "Fabricação de laticínios"
+  },
+  {
+    "id": "10538",
+    "name": "Fabricação de sorvetes e outros gelados comestíveis"
+  },
+  {
+    "id": "10619",
+    "name": "Beneficiamento de arroz e fabricação de produtos do arroz"
+  },
+  {
+    "id": "10627",
+    "name": "Moagem de trigo e fabricação de derivados"
+  },
+  {
+    "id": "10635",
+    "name": "Fabricação de farinha de mandioca e derivados"
+  },
+  {
+    "id": "10643",
+    "name": "Fabricação de farinha de milho e derivados, exceto óleos de milho"
+  },
+  {
+    "id": "10651",
+    "name": "Fabricação de amidos e féculas de vegetais e de óleos de milho"
+  },
+  {
+    "id": "10660",
+    "name": "Fabricação de alimentos para animais"
+  },
+  {
+    "id": "10694",
+    "name": "Moagem e fabricação de produtos de origem vegetal não especificados anteriormente"
+  },
+  {
+    "id": "10716",
+    "name": "Fabricação de açúcar em bruto"
+  },
+  {
+    "id": "10724",
+    "name": "Fabricação de açúcar refinado"
+  },
+  {
+    "id": "10813",
+    "name": "Torrefação e moagem de café"
+  },
+  {
+    "id": "10821",
+    "name": "Fabricação de produtos à base de café"
+  },
+  {
+    "id": "10911",
+    "name": "Fabricação de produtos de panificação"
+  },
+  {
+    "id": "10929",
+    "name": "Fabricação de biscoitos e bolachas"
+  },
+  {
+    "id": "10937",
+    "name": "Fabricação de produtos derivados do cacau, de chocolates e confeitos"
+  },
+  {
+    "id": "10945",
+    "name": "Fabricação de massas alimentícias"
+  },
+  {
+    "id": "10953",
+    "name": "Fabricação de especiarias, molhos, temperos e condimentos"
+  },
+  {
+    "id": "10961",
+    "name": "Fabricação de alimentos e pratos prontos"
+  },
+  {
+    "id": "10996",
+    "name": "Fabricação de produtos alimentícios não especificados anteriormente"
+  },
+  {
+    "id": "11119",
+    "name": "Fabricação de aguardentes e outras bebidas destiladas"
+  },
+  {
+    "id": "11127",
+    "name": "Fabricação de vinho"
+  },
+  {
+    "id": "11135",
+    "name": "Fabricação de malte, cervejas e chopes"
+  },
+  {
+    "id": "11216",
+    "name": "Fabricação de águas envasadas"
+  },
+  {
+    "id": "11224",
+    "name": "Fabricação de refrigerantes e de outras bebidas não alcoólicas"
+  },
+  {
+    "id": "12107",
+    "name": "Processamento industrial do fumo"
+  },
+  {
+    "id": "12204",
+    "name": "Fabricação de produtos do fumo"
+  },
+  {
+    "id": "13111",
+    "name": "Preparação e fiação de fibras de algodão"
+  },
+  {
+    "id": "13120",
+    "name": "Preparação e fiação de fibras têxteis naturais, exceto algodão"
+  },
+  {
+    "id": "13138",
+    "name": "Fiação de fibras artificiais e sintéticas"
+  },
+  {
+    "id": "13146",
+    "name": "Fabricação de linhas para costurar e bordar"
+  },
+  {
+    "id": "13219",
+    "name": "Tecelagem de fios de algodão"
+  },
+  {
+    "id": "13227",
+    "name": "Tecelagem de fios de fibras têxteis naturais, exceto algodão"
+  },
+  {
+    "id": "13235",
+    "name": "Tecelagem de fios de fibras artificiais e sintéticas"
+  },
+  {
+    "id": "13308",
+    "name": "Fabricação de tecidos de malha"
+  },
+  {
+    "id": "13405",
+    "name": "Acabamentos em fios, tecidos e artefatos têxteis"
+  },
+  {
+    "id": "13511",
+    "name": "Fabricação de artefatos têxteis para uso doméstico"
+  },
+  {
+    "id": "13529",
+    "name": "Fabricação de artefatos de tapeçaria"
+  },
+  {
+    "id": "13537",
+    "name": "Fabricação de artefatos de cordoaria"
+  },
+  {
+    "id": "13545",
+    "name": "Fabricação de tecidos especiais, inclusive artefatos"
+  },
+  {
+    "id": "13596",
+    "name": "Fabricação de outros produtos têxteis não especificados anteriormente"
+  },
+  {
+    "id": "14118",
+    "name": "Confecção de roupas íntimas"
+  },
+  {
+    "id": "14126",
+    "name": "Confecção de peças do vestuário, exceto roupas íntimas"
+  },
+  {
+    "id": "14134",
+    "name": "Confecção de roupas profissionais"
+  },
+  {
+    "id": "14142",
+    "name": "Fabricação de acessórios do vestuário, exceto para segurança e proteção"
+  },
+  {
+    "id": "14215",
+    "name": "Fabricação de meias"
+  },
+  {
+    "id": "14223",
+    "name": "Fabricação de artigos do vestuário, produzidos em malharias e tricotagens, exceto meias"
+  },
+  {
+    "id": "15106",
+    "name": "Curtimento e outras preparações de couro"
+  },
+  {
+    "id": "15211",
+    "name": "Fabricação de artigos para viagem, bolsas e semelhantes de qualquer material"
+  },
+  {
+    "id": "15297",
+    "name": "Fabricação de artefatos de couro não especificados anteriormente"
+  },
+  {
+    "id": "15319",
+    "name": "Fabricação de calçados de couro"
+  },
+  {
+    "id": "15327",
+    "name": "Fabricação de tênis de qualquer material"
+  },
+  {
+    "id": "15335",
+    "name": "Fabricação de calçados de material sintético"
+  },
+  {
+    "id": "15394",
+    "name": "Fabricação de calçados de materiais não especificados anteriormente"
+  },
+  {
+    "id": "15408",
+    "name": "Fabricação de partes para calçados, de qualquer material"
+  },
+  {
+    "id": "16102",
+    "name": "Desdobramento de madeira"
+  },
+  {
+    "id": "16218",
+    "name": "Fabricação de madeira laminada e de chapas de madeira compensada, prensada e aglomerada"
+  },
+  {
+    "id": "16226",
+    "name": "Fabricação de estruturas de madeira e de artigos de carpintaria para construção"
+  },
+  {
+    "id": "16234",
+    "name": "Fabricação de artefatos de tanoaria e de embalagens de madeira"
+  },
+  {
+    "id": "16293",
+    "name": "Fabricação de artefatos de madeira, palha, cortiça, vime e material trançado não especificados anteriormente, exceto móveis"
+  },
+  {
+    "id": "17109",
+    "name": "Fabricação de celulose e outras pastas para a fabricação de papel"
+  },
+  {
+    "id": "17214",
+    "name": "Fabricação de papel"
+  },
+  {
+    "id": "17222",
+    "name": "Fabricação de cartolina e papel-cartão"
+  },
+  {
+    "id": "17311",
+    "name": "Fabricação de embalagens de papel"
+  },
+  {
+    "id": "17320",
+    "name": "Fabricação de embalagens de cartolina e papel-cartão"
+  },
+  {
+    "id": "17338",
+    "name": "Fabricação de chapas e de embalagens de papelão ondulado"
+  },
+  {
+    "id": "17419",
+    "name": "Fabricação de produtos de papel, cartolina, papel-cartão e papelão ondulado para uso comercial e de escritório"
+  },
+  {
+    "id": "17427",
+    "name": "Fabricação de produtos de papel para usos doméstico e higiênico-sanitário"
+  },
+  {
+    "id": "17494",
+    "name": "Fabricação de produtos de pastas celulósicas, papel, cartolina, papel-cartão e papelão ondulado não especificados anteriormente"
+  },
+  {
+    "id": "18113",
+    "name": "Impressão de jornais, livros, revistas e outras publicações periódicas"
+  },
+  {
+    "id": "18121",
+    "name": "Impressão de material de segurança"
+  },
+  {
+    "id": "18130",
+    "name": "Impressão de materiais para outros usos"
+  },
+  {
+    "id": "18211",
+    "name": "Serviços de pré-impressão"
+  },
+  {
+    "id": "18229",
+    "name": "Serviços de acabamentos gráficos"
+  },
+  {
+    "id": "18300",
+    "name": "Reprodução de materiais gravados em qualquer suporte"
+  },
+  {
+    "id": "19101",
+    "name": "Coquerias"
+  },
+  {
+    "id": "19217",
+    "name": "Fabricação de produtos do refino de petróleo"
+  },
+  {
+    "id": "19225",
+    "name": "Fabricação de produtos derivados do petróleo, exceto produtos do refino"
+  },
+  {
+    "id": "19314",
+    "name": "Fabricação de álcool"
+  },
+  {
+    "id": "19322",
+    "name": "Fabricação de biocombustíveis, exceto álcool"
+  },
+  {
+    "id": "20118",
+    "name": "Fabricação de cloro e álcalis"
+  },
+  {
+    "id": "20126",
+    "name": "Fabricação de intermediários para fertilizantes"
+  },
+  {
+    "id": "20134",
+    "name": "Fabricação de adubos e fertilizantes"
+  },
+  {
+    "id": "20142",
+    "name": "Fabricação de gases industriais"
+  },
+  {
+    "id": "20193",
+    "name": "Fabricação de produtos químicos inorgânicos não especificados anteriormente"
+  },
+  {
+    "id": "20215",
+    "name": "Fabricação de produtos petroquímicos básicos"
+  },
+  {
+    "id": "20223",
+    "name": "Fabricação de intermediários para plastificantes, resinas e fibras"
+  },
+  {
+    "id": "20291",
+    "name": "Fabricação de produtos químicos orgânicos não especificados anteriormente"
+  },
+  {
+    "id": "20312",
+    "name": "Fabricação de resinas termoplásticas"
+  },
+  {
+    "id": "20321",
+    "name": "Fabricação de resinas termofixas"
+  },
+  {
+    "id": "20339",
+    "name": "Fabricação de elastômeros"
+  },
+  {
+    "id": "20401",
+    "name": "Fabricação de fibras artificiais e sintéticas"
+  },
+  {
+    "id": "20517",
+    "name": "Fabricação de defensivos agrícolas"
+  },
+  {
+    "id": "20525",
+    "name": "Fabricação de desinfestantes domissanitários"
+  },
+  {
+    "id": "20614",
+    "name": "Fabricação de sabões e detergentes sintéticos"
+  },
+  {
+    "id": "20622",
+    "name": "Fabricação de produtos de limpeza e polimento"
+  },
+  {
+    "id": "20631",
+    "name": "Fabricação de cosméticos, produtos de perfumaria e de higiene pessoal"
+  },
+  {
+    "id": "20711",
+    "name": "Fabricação de tintas, vernizes, esmaltes e lacas"
+  },
+  {
+    "id": "20720",
+    "name": "Fabricação de tintas de impressão"
+  },
+  {
+    "id": "20738",
+    "name": "Fabricação de impermeabilizantes, solventes e produtos afins"
+  },
+  {
+    "id": "20916",
+    "name": "Fabricação de adesivos e selantes"
+  },
+  {
+    "id": "20924",
+    "name": "Fabricação de explosivos"
+  },
+  {
+    "id": "20932",
+    "name": "Fabricação de aditivos de uso industrial"
+  },
+  {
+    "id": "20941",
+    "name": "Fabricação de catalisadores"
+  },
+  {
+    "id": "20991",
+    "name": "Fabricação de produtos químicos não especificados anteriormente"
+  },
+  {
+    "id": "21106",
+    "name": "Fabricação de produtos farmoquímicos"
+  },
+  {
+    "id": "21211",
+    "name": "Fabricação de medicamentos para uso humano"
+  },
+  {
+    "id": "21220",
+    "name": "Fabricação de medicamentos para uso veterinário"
+  },
+  {
+    "id": "21238",
+    "name": "Fabricação de preparações farmacêuticas"
+  },
+  {
+    "id": "22111",
+    "name": "Fabricação de pneumáticos e de câmaras-de-ar"
+  },
+  {
+    "id": "22129",
+    "name": "Reforma de pneumáticos usados"
+  },
+  {
+    "id": "22196",
+    "name": "Fabricação de artefatos de borracha não especificados anteriormente"
+  },
+  {
+    "id": "22218",
+    "name": "Fabricação de laminados planos e tubulares de material plástico"
+  },
+  {
+    "id": "22226",
+    "name": "Fabricação de embalagens de material plástico"
+  },
+  {
+    "id": "22234",
+    "name": "Fabricação de tubos e acessórios de material plástico para uso na construção"
+  },
+  {
+    "id": "22293",
+    "name": "Fabricação de artefatos de material plástico não especificados anteriormente"
+  },
+  {
+    "id": "23117",
+    "name": "Fabricação de vidro plano e de segurança"
+  },
+  {
+    "id": "23125",
+    "name": "Fabricação de embalagens de vidro"
+  },
+  {
+    "id": "23192",
+    "name": "Fabricação de artigos de vidro"
+  },
+  {
+    "id": "23206",
+    "name": "Fabricação de cimento"
+  },
+  {
+    "id": "23303",
+    "name": "Fabricação de artefatos de concreto, cimento, fibrocimento, gesso e materiais semelhantes"
+  },
+  {
+    "id": "23419",
+    "name": "Fabricação de produtos cerâmicos refratários"
+  },
+  {
+    "id": "23427",
+    "name": "Fabricação de produtos cerâmicos não refratários para uso estrutural na construção"
+  },
+  {
+    "id": "23494",
+    "name": "Fabricação de produtos cerâmicos não refratários não especificados anteriormente"
+  },
+  {
+    "id": "23915",
+    "name": "Aparelhamento e outros trabalhos em pedras"
+  },
+  {
+    "id": "23923",
+    "name": "Fabricação de cal e gesso"
+  },
+  {
+    "id": "23991",
+    "name": "Fabricação de produtos de minerais não metálicos não especificados anteriormente"
+  },
+  {
+    "id": "24113",
+    "name": "Produção de ferro-gusa"
+  },
+  {
+    "id": "24121",
+    "name": "Produção de ferroligas"
+  },
+  {
+    "id": "24211",
+    "name": "Produção de semiacabados de aço"
+  },
+  {
+    "id": "24229",
+    "name": "Produção de laminados planos de aço"
+  },
+  {
+    "id": "24237",
+    "name": "Produção de laminados longos de aço"
+  },
+  {
+    "id": "24245",
+    "name": "Produção de relaminados, trefilados e perfilados de aço"
+  },
+  {
+    "id": "24318",
+    "name": "Produção de tubos de aço com costura"
+  },
+  {
+    "id": "24393",
+    "name": "Produção de outros tubos de ferro e aço"
+  },
+  {
+    "id": "24415",
+    "name": "Metalurgia do alumínio e suas ligas"
+  },
+  {
+    "id": "24423",
+    "name": "Metalurgia dos metais preciosos"
+  },
+  {
+    "id": "24431",
+    "name": "Metalurgia do cobre"
+  },
+  {
+    "id": "24491",
+    "name": "Metalurgia dos metais não ferrosos e suas ligas não especificados anteriormente"
+  },
+  {
+    "id": "24512",
+    "name": "Fundição de ferro e aço"
+  },
+  {
+    "id": "24521",
+    "name": "Fundição de metais não ferrosos e suas ligas"
+  },
+  {
+    "id": "25110",
+    "name": "Fabricação de estruturas metálicas"
+  },
+  {
+    "id": "25128",
+    "name": "Fabricação de esquadrias de metal"
+  },
+  {
+    "id": "25136",
+    "name": "Fabricação de obras de caldeiraria pesada"
+  },
+  {
+    "id": "25217",
+    "name": "Fabricação de tanques, reservatórios metálicos e caldeiras para aquecimento central"
+  },
+  {
+    "id": "25225",
+    "name": "Fabricação de caldeiras geradoras de vapor, exceto para aquecimento central e para veículos"
+  },
+  {
+    "id": "25314",
+    "name": "Produção de forjados de aço e de metais não ferrosos e suas ligas"
+  },
+  {
+    "id": "25322",
+    "name": "Produção de artefatos estampados de metal; metalurgia do pó"
+  },
+  {
+    "id": "25390",
+    "name": "Serviços de usinagem, solda, tratamento e revestimento em metais"
+  },
+  {
+    "id": "25411",
+    "name": "Fabricação de artigos de cutelaria"
+  },
+  {
+    "id": "25420",
+    "name": "Fabricação de artigos de serralheria, exceto esquadrias"
+  },
+  {
+    "id": "25438",
+    "name": "Fabricação de ferramentas"
+  },
+  {
+    "id": "25501",
+    "name": "Fabricação de equipamento bélico pesado, armas de fogo e munições"
+  },
+  {
+    "id": "25918",
+    "name": "Fabricação de embalagens metálicas"
+  },
+  {
+    "id": "25926",
+    "name": "Fabricação de produtos de trefilados de metal"
+  },
+  {
+    "id": "25934",
+    "name": "Fabricação de artigos de metal para uso doméstico e pessoal"
+  },
+  {
+    "id": "25993",
+    "name": "Fabricação de produtos de metal não especificados anteriormente"
+  },
+  {
+    "id": "26108",
+    "name": "Fabricação de componentes eletrônicos"
+  },
+  {
+    "id": "26213",
+    "name": "Fabricação de equipamentos de informática"
+  },
+  {
+    "id": "26221",
+    "name": "Fabricação de periféricos para equipamentos de informática"
+  },
+  {
+    "id": "26311",
+    "name": "Fabricação de equipamentos transmissores de comunicação"
+  },
+  {
+    "id": "26329",
+    "name": "Fabricação de aparelhos telefônicos e de outros equipamentos de comunicação"
+  },
+  {
+    "id": "26400",
+    "name": "Fabricação de aparelhos de recepção, reprodução, gravação e amplificação de áudio e vídeo"
+  },
+  {
+    "id": "26515",
+    "name": "Fabricação de aparelhos e equipamentos de medida, teste e controle"
+  },
+  {
+    "id": "26523",
+    "name": "Fabricação de cronômetros e relógios"
+  },
+  {
+    "id": "26604",
+    "name": "Fabricação de aparelhos eletromédicos e eletroterapêuticos e equipamentos de irradiação"
+  },
+  {
+    "id": "26701",
+    "name": "Fabricação de equipamentos e instrumentos ópticos, fotográficos e cinematográficos"
+  },
+  {
+    "id": "26809",
+    "name": "Fabricação de mídias virgens, magnéticas e ópticas"
+  },
+  {
+    "id": "27104",
+    "name": "Fabricação de geradores, transformadores e motores elétricos"
+  },
+  {
+    "id": "27210",
+    "name": "Fabricação de pilhas, baterias e acumuladores elétricos, exceto para veículos automotores"
+  },
+  {
+    "id": "27228",
+    "name": "Fabricação de baterias e acumuladores para veículos automotores"
+  },
+  {
+    "id": "27317",
+    "name": "Fabricação de aparelhos e equipamentos para distribuição e controle de energia elétrica"
+  },
+  {
+    "id": "27325",
+    "name": "Fabricação de material elétrico para instalações em circuito de consumo"
+  },
+  {
+    "id": "27333",
+    "name": "Fabricação de fios, cabos e condutores elétricos isolados"
+  },
+  {
+    "id": "27406",
+    "name": "Fabricação de lâmpadas e outros equipamentos de iluminação"
+  },
+  {
+    "id": "27511",
+    "name": "Fabricação de fogões, refrigeradores e máquinas de lavar e secar para uso doméstico"
+  },
+  {
+    "id": "27597",
+    "name": "Fabricação de aparelhos eletrodomésticos não especificados anteriormente"
+  },
+  {
+    "id": "27902",
+    "name": "Fabricação de equipamentos e aparelhos elétricos não especificados anteriormente"
+  },
+  {
+    "id": "28119",
+    "name": "Fabricação de motores e turbinas, exceto para aviões e veículos rodoviários"
+  },
+  {
+    "id": "28127",
+    "name": "Fabricação de equipamentos hidráulicos e pneumáticos, exceto válvulas"
+  },
+  {
+    "id": "28135",
+    "name": "Fabricação de válvulas, registros e dispositivos semelhantes"
+  },
+  {
+    "id": "28143",
+    "name": "Fabricação de compressores"
+  },
+  {
+    "id": "28151",
+    "name": "Fabricação de equipamentos de transmissão para fins industriais"
+  },
+  {
+    "id": "28216",
+    "name": "Fabricação de aparelhos e equipamentos para instalações térmicas"
+  },
+  {
+    "id": "28224",
+    "name": "Fabricação de máquinas, equipamentos e aparelhos para transporte e elevação de cargas e pessoas"
+  },
+  {
+    "id": "28232",
+    "name": "Fabricação de máquinas e aparelhos de refrigeração e ventilação para uso industrial e comercial"
+  },
+  {
+    "id": "28241",
+    "name": "Fabricação de aparelhos e equipamentos de ar condicionado"
+  },
+  {
+    "id": "28259",
+    "name": "Fabricação de máquinas e equipamentos para saneamento básico e ambiental"
+  },
+  {
+    "id": "28291",
+    "name": "Fabricação de máquinas e equipamentos de uso geral não especificados anteriormente"
+  },
+  {
+    "id": "28313",
+    "name": "Fabricação de tratores agrícolas"
+  },
+  {
+    "id": "28321",
+    "name": "Fabricação de equipamentos para irrigação agrícola"
+  },
+  {
+    "id": "28330",
+    "name": "Fabricação de máquinas e equipamentos para a agricultura e pecuária, exceto para irrigação"
+  },
+  {
+    "id": "28402",
+    "name": "Fabricação de máquinas-ferramenta"
+  },
+  {
+    "id": "28518",
+    "name": "Fabricação de máquinas e equipamentos para a prospecção e extração de petróleo"
+  },
+  {
+    "id": "28526",
+    "name": "Fabricação de outras máquinas e equipamentos para uso na extração mineral, exceto na extração de petróleo"
+  },
+  {
+    "id": "28534",
+    "name": "Fabricação de tratores, exceto agrícolas"
+  },
+  {
+    "id": "28542",
+    "name": "Fabricação de máquinas e equipamentos para terraplenagem, pavimentação e construção, exceto tratores"
+  },
+  {
+    "id": "28615",
+    "name": "Fabricação de máquinas para a indústria metalúrgica, exceto máquinas-ferramenta"
+  },
+  {
+    "id": "28623",
+    "name": "Fabricação de máquinas e equipamentos para as indústrias de alimentos, bebidas e fumo"
+  },
+  {
+    "id": "28631",
+    "name": "Fabricação de máquinas e equipamentos para a indústria têxtil"
+  },
+  {
+    "id": "28640",
+    "name": "Fabricação de máquinas e equipamentos para as indústrias do vestuário, do couro e de calçados"
+  },
+  {
+    "id": "28658",
+    "name": "Fabricação de máquinas e equipamentos para as indústrias de celulose, papel e papelão e artefatos"
+  },
+  {
+    "id": "28666",
+    "name": "Fabricação de máquinas e equipamentos para a indústria do plástico"
+  },
+  {
+    "id": "28691",
+    "name": "Fabricação de máquinas e equipamentos para uso industrial específico não especificados anteriormente"
+  },
+  {
+    "id": "29107",
+    "name": "Fabricação de automóveis, camionetas e utilitários"
+  },
+  {
+    "id": "29204",
+    "name": "Fabricação de caminhões e ônibus"
+  },
+  {
+    "id": "29301",
+    "name": "Fabricação de cabines, carrocerias e reboques para veículos automotores"
+  },
+  {
+    "id": "29417",
+    "name": "Fabricação de peças e acessórios para o sistema motor de veículos automotores"
+  },
+  {
+    "id": "29425",
+    "name": "Fabricação de peças e acessórios para os sistemas de marcha e transmissão de veículos automotores"
+  },
+  {
+    "id": "29433",
+    "name": "Fabricação de peças e acessórios para o sistema de freios de veículos automotores"
+  },
+  {
+    "id": "29441",
+    "name": "Fabricação de peças e acessórios para o sistema de direção e suspensão de veículos automotores"
+  },
+  {
+    "id": "29450",
+    "name": "Fabricação de material elétrico e eletrônico para veículos automotores, exceto baterias"
+  },
+  {
+    "id": "29492",
+    "name": "Fabricação de peças e acessórios para veículos automotores não especificados anteriormente"
+  },
+  {
+    "id": "29506",
+    "name": "Recondicionamento e recuperação de motores para veículos automotores"
+  },
+  {
+    "id": "30113",
+    "name": "Construção de embarcações e estruturas flutuantes"
+  },
+  {
+    "id": "30121",
+    "name": "Construção de embarcações para esporte e lazer"
+  },
+  {
+    "id": "30318",
+    "name": "Fabricação de locomotivas, vagões e outros materiais rodantes"
+  },
+  {
+    "id": "30326",
+    "name": "Fabricação de peças e acessórios para veículos ferroviários"
+  },
+  {
+    "id": "30415",
+    "name": "Fabricação de aeronaves"
+  },
+  {
+    "id": "30423",
+    "name": "Fabricação de turbinas, motores e outros componentes e peças para aeronaves"
+  },
+  {
+    "id": "30504",
+    "name": "Fabricação de veículos militares de combate"
+  },
+  {
+    "id": "30911",
+    "name": "Fabricação de motocicletas"
+  },
+  {
+    "id": "30920",
+    "name": "Fabricação de bicicletas e triciclos não motorizados"
+  },
+  {
+    "id": "30997",
+    "name": "Fabricação de equipamentos de transporte não especificados anteriormente"
+  },
+  {
+    "id": "31012",
+    "name": "Fabricação de móveis com predominância de madeira"
+  },
+  {
+    "id": "31021",
+    "name": "Fabricação de móveis com predominância de metal"
+  },
+  {
+    "id": "31039",
+    "name": "Fabricação de móveis de outros materiais, exceto madeira e metal"
+  },
+  {
+    "id": "31047",
+    "name": "Fabricação de colchões"
+  },
+  {
+    "id": "32116",
+    "name": "Lapidação de gemas e fabricação de artefatos de ourivesaria e joalheria"
+  },
+  {
+    "id": "32124",
+    "name": "Fabricação de bijuterias e artefatos semelhantes"
+  },
+  {
+    "id": "32205",
+    "name": "Fabricação de instrumentos musicais"
+  },
+  {
+    "id": "32302",
+    "name": "Fabricação de artefatos para pesca e esporte"
+  },
+  {
+    "id": "32400",
+    "name": "Fabricação de brinquedos e jogos recreativos"
+  },
+  {
+    "id": "32507",
+    "name": "Fabricação de instrumentos e materiais para uso médico e odontológico e de artigos ópticos"
+  },
+  {
+    "id": "32914",
+    "name": "Fabricação de escovas, pincéis e vassouras"
+  },
+  {
+    "id": "32922",
+    "name": "Fabricação de equipamentos e acessórios para segurança e proteção pessoal e profissional"
+  },
+  {
+    "id": "32990",
+    "name": "Fabricação de produtos diversos não especificados anteriormente"
+  },
+  {
+    "id": "33112",
+    "name": "Manutenção e reparação de tanques, reservatórios metálicos e caldeiras, exceto para veículos"
+  },
+  {
+    "id": "33121",
+    "name": "Manutenção e reparação de equipamentos eletrônicos e ópticos"
+  },
+  {
+    "id": "33139",
+    "name": "Manutenção e reparação de máquinas e equipamentos elétricos"
+  },
+  {
+    "id": "33147",
+    "name": "Manutenção e reparação de máquinas e equipamentos da indústria mecânica"
+  },
+  {
+    "id": "33155",
+    "name": "Manutenção e reparação de veículos ferroviários"
+  },
+  {
+    "id": "33163",
+    "name": "Manutenção e reparação de aeronaves"
+  },
+  {
+    "id": "33171",
+    "name": "Manutenção e reparação de embarcações"
+  },
+  {
+    "id": "33198",
+    "name": "Manutenção e reparação de equipamentos e produtos não especificados anteriormente"
+  },
+  {
+    "id": "33210",
+    "name": "Instalação de máquinas e equipamentos industriais"
+  },
+  {
+    "id": "33295",
+    "name": "Instalação de equipamentos não especificados anteriormente"
+  },
+  {
+    "id": "35115",
+    "name": "Geração de energia elétrica"
+  },
+  {
+    "id": "35123",
+    "name": "Transmissão de energia elétrica"
+  },
+  {
+    "id": "35131",
+    "name": "Comércio atacadista de energia elétrica"
+  },
+  {
+    "id": "35140",
+    "name": "Distribuição de energia elétrica"
+  },
+  {
+    "id": "35204",
+    "name": "Produção de gás; processamento de gás natural; distribuição de combustíveis gasosos por redes urbanas"
+  },
+  {
+    "id": "35301",
+    "name": "Produção e distribuição de vapor, água quente e ar condicionado"
+  },
+  {
+    "id": "36006",
+    "name": "Captação, tratamento e distribuição de água"
+  },
+  {
+    "id": "37011",
+    "name": "Gestão de redes de esgoto"
+  },
+  {
+    "id": "37029",
+    "name": "Atividades relacionadas a esgoto, exceto a gestão de redes"
+  },
+  {
+    "id": "38114",
+    "name": "Coleta de resíduos não perigosos"
+  },
+  {
+    "id": "38122",
+    "name": "Coleta de resíduos perigosos"
+  },
+  {
+    "id": "38211",
+    "name": "Tratamento e disposição de resíduos não perigosos"
+  },
+  {
+    "id": "38220",
+    "name": "Tratamento e disposição de resíduos perigosos"
+  },
+  {
+    "id": "38319",
+    "name": "Recuperação de materiais metálicos"
+  },
+  {
+    "id": "38327",
+    "name": "Recuperação de materiais plásticos"
+  },
+  {
+    "id": "38394",
+    "name": "Recuperação de materiais não especificados anteriormente"
+  },
+  {
+    "id": "39005",
+    "name": "Descontaminação e outros serviços de gestão de resíduos"
+  },
+  {
+    "id": "41107",
+    "name": "Incorporação de empreendimentos imobiliários"
+  },
+  {
+    "id": "41204",
+    "name": "Construção de edifícios"
+  },
+  {
+    "id": "42111",
+    "name": "Construção de rodovias e ferrovias"
+  },
+  {
+    "id": "42120",
+    "name": "Construção de obras de arte especiais"
+  },
+  {
+    "id": "42138",
+    "name": "Obras de urbanização - ruas, praças e calçadas"
+  },
+  {
+    "id": "42219",
+    "name": "Obras para geração e distribuição de energia elétrica e para telecomunicações"
+  },
+  {
+    "id": "42227",
+    "name": "Construção de redes de abastecimento de água, coleta de esgoto e construções correlatas"
+  },
+  {
+    "id": "42235",
+    "name": "Construção de redes de transportes por dutos, exceto para água e esgoto"
+  },
+  {
+    "id": "42910",
+    "name": "Obras portuárias, marítimas e fluviais"
+  },
+  {
+    "id": "42928",
+    "name": "Montagem de instalações industriais e de estruturas metálicas"
+  },
+  {
+    "id": "42995",
+    "name": "Obras de engenharia civil não especificadas anteriormente"
+  },
+  {
+    "id": "43118",
+    "name": "Demolição e preparação de canteiros de obras"
+  },
+  {
+    "id": "43126",
+    "name": "Perfurações e sondagens"
+  },
+  {
+    "id": "43134",
+    "name": "Obras de terraplenagem"
+  },
+  {
+    "id": "43193",
+    "name": "Serviços de preparação do terreno não especificados anteriormente"
+  },
+  {
+    "id": "43215",
+    "name": "Instalações elétricas"
+  },
+  {
+    "id": "43223",
+    "name": "Instalações hidráulicas, de sistemas de ventilação e refrigeração"
+  },
+  {
+    "id": "43291",
+    "name": "Obras de instalações em construções não especificadas anteriormente"
+  },
+  {
+    "id": "43304",
+    "name": "Obras de acabamento"
+  },
+  {
+    "id": "43916",
+    "name": "Obras de fundações"
+  },
+  {
+    "id": "43991",
+    "name": "Serviços especializados para construção não especificados anteriormente"
+  },
+  {
+    "id": "45111",
+    "name": "Comércio a varejo e por atacado de veículos automotores"
+  },
+  {
+    "id": "45129",
+    "name": "Representantes comerciais e agentes do comércio de veículos automotores"
+  },
+  {
+    "id": "45200",
+    "name": "Manutenção e reparação de veículos automotores"
+  },
+  {
+    "id": "45307",
+    "name": "Comércio de peças e acessórios para veículos automotores"
+  },
+  {
+    "id": "45412",
+    "name": "Comércio por atacado e a varejo de motocicletas, peças e acessórios"
+  },
+  {
+    "id": "45421",
+    "name": "Representantes comerciais e agentes do comércio de motocicletas, peças e acessórios"
+  },
+  {
+    "id": "45439",
+    "name": "Manutenção e reparação de motocicletas"
+  },
+  {
+    "id": "46117",
+    "name": "Representantes comerciais e agentes do comércio de matérias-primas agrícolas e animais vivos"
+  },
+  {
+    "id": "46125",
+    "name": "Representantes comerciais e agentes do comércio de combustíveis, minerais, produtos siderúrgicos e químicos"
+  },
+  {
+    "id": "46133",
+    "name": "Representantes comerciais e agentes do comércio de madeira, material de construção e ferragens"
+  },
+  {
+    "id": "46141",
+    "name": "Representantes comerciais e agentes do comércio de máquinas, equipamentos, embarcações e aeronaves"
+  },
+  {
+    "id": "46150",
+    "name": "Representantes comerciais e agentes do comércio de eletrodomésticos, móveis e artigos de uso doméstico"
+  },
+  {
+    "id": "46168",
+    "name": "Representantes comerciais e agentes do comércio de têxteis, vestuário, calçados e artigos de viagem"
+  },
+  {
+    "id": "46176",
+    "name": "Representantes comerciais e agentes do comércio de produtos alimentícios, bebidas e fumo"
+  },
+  {
+    "id": "46184",
+    "name": "Representantes comerciais e agentes do comércio especializado em produtos não especificados anteriormente"
+  },
+  {
+    "id": "46192",
+    "name": "Representantes comerciais e agentes do comércio de mercadorias em geral não especializado"
+  },
+  {
+    "id": "46214",
+    "name": "Comércio atacadista de café em grão"
+  },
+  {
+    "id": "46222",
+    "name": "Comércio atacadista de soja"
+  },
+  {
+    "id": "46231",
+    "name": "Comércio atacadista de animais vivos, alimentos para animais e matérias-primas agrícolas, exceto café e soja"
+  },
+  {
+    "id": "46311",
+    "name": "Comércio atacadista de leite e laticínios"
+  },
+  {
+    "id": "46320",
+    "name": "Comércio atacadista de cereais e leguminosas beneficiados, farinhas, amidos e féculas"
+  },
+  {
+    "id": "46338",
+    "name": "Comércio atacadista de hortifrutigranjeiros"
+  },
+  {
+    "id": "46346",
+    "name": "Comércio atacadista de carnes, produtos da carne e pescado"
+  },
+  {
+    "id": "46354",
+    "name": "Comércio atacadista de bebidas"
+  },
+  {
+    "id": "46362",
+    "name": "Comércio atacadista de produtos do fumo"
+  },
+  {
+    "id": "46371",
+    "name": "Comércio atacadista especializado em produtos alimentícios não especificados anteriormente"
+  },
+  {
+    "id": "46397",
+    "name": "Comércio atacadista de produtos alimentícios em geral"
+  },
+  {
+    "id": "46419",
+    "name": "Comércio atacadista de tecidos, artefatos de tecidos e de armarinho"
+  },
+  {
+    "id": "46427",
+    "name": "Comércio atacadista de artigos do vestuário e acessórios"
+  },
+  {
+    "id": "46435",
+    "name": "Comércio atacadista de calçados e artigos de viagem"
+  },
+  {
+    "id": "46443",
+    "name": "Comércio atacadista de produtos farmacêuticos para uso humano e veterinário"
+  },
+  {
+    "id": "46451",
+    "name": "Comércio atacadista de instrumentos e materiais para uso médico, cirúrgico, ortopédico e odontológico"
+  },
+  {
+    "id": "46460",
+    "name": "Comércio atacadista de cosméticos, produtos de perfumaria e de higiene pessoal"
+  },
+  {
+    "id": "46478",
+    "name": "Comércio atacadista de artigos de escritório e de papelaria; livros, jornais e outras publicações"
+  },
+  {
+    "id": "46494",
+    "name": "Comércio atacadista de equipamentos e artigos de uso pessoal e doméstico não especificados anteriormente"
+  },
+  {
+    "id": "46516",
+    "name": "Comércio atacadista de computadores, periféricos e suprimentos de informática"
+  },
+  {
+    "id": "46524",
+    "name": "Comércio atacadista de componentes eletrônicos e equipamentos de telefonia e comunicação"
+  },
+  {
+    "id": "46613",
+    "name": "Comércio atacadista de máquinas, aparelhos e equipamentos para uso agropecuário; partes e peças"
+  },
+  {
+    "id": "46621",
+    "name": "Comércio atacadista de máquinas, equipamentos para terraplenagem, mineração e construção; partes e peças"
+  },
+  {
+    "id": "46630",
+    "name": "Comércio atacadista de máquinas e equipamentos para uso industrial; partes e peças"
+  },
+  {
+    "id": "46648",
+    "name": "Comércio atacadista de máquinas, aparelhos e equipamentos para uso odonto-médico-hospitalar; partes e peças"
+  },
+  {
+    "id": "46656",
+    "name": "Comércio atacadista de máquinas e equipamentos para uso comercial; partes e peças"
+  },
+  {
+    "id": "46699",
+    "name": "Comércio atacadista de máquinas, aparelhos e equipamentos não especificados anteriormente; partes e peças"
+  },
+  {
+    "id": "46711",
+    "name": "Comércio atacadista de madeira e produtos derivados"
+  },
+  {
+    "id": "46729",
+    "name": "Comércio atacadista de ferragens e ferramentas"
+  },
+  {
+    "id": "46737",
+    "name": "Comércio atacadista de material elétrico"
+  },
+  {
+    "id": "46745",
+    "name": "Comércio atacadista de cimento"
+  },
+  {
+    "id": "46796",
+    "name": "Comércio atacadista especializado de materiais de construção não especificados anteriormente e de materiais de construção em geral"
+  },
+  {
+    "id": "46818",
+    "name": "Comércio atacadista de combustíveis sólidos, líquidos e gasosos, exceto gás natural e GLP"
+  },
+  {
+    "id": "46826",
+    "name": "Comércio atacadista de gás liquefeito de petróleo (GLP)"
+  },
+  {
+    "id": "46834",
+    "name": "Comércio atacadista de defensivos agrícolas, adubos, fertilizantes e corretivos do solo"
+  },
+  {
+    "id": "46842",
+    "name": "Comércio atacadista de produtos químicos e petroquímicos, exceto agroquímicos"
+  },
+  {
+    "id": "46851",
+    "name": "Comércio atacadista de produtos siderúrgicos e metalúrgicos, exceto para construção"
+  },
+  {
+    "id": "46869",
+    "name": "Comércio atacadista de papel e papelão em bruto e de embalagens"
+  },
+  {
+    "id": "46877",
+    "name": "Comércio atacadista de resíduos e sucatas"
+  },
+  {
+    "id": "46893",
+    "name": "Comércio atacadista especializado de outros produtos intermediários não especificados anteriormente"
+  },
+  {
+    "id": "46915",
+    "name": "Comércio atacadista de mercadorias em geral, com predominância de produtos alimentícios"
+  },
+  {
+    "id": "46923",
+    "name": "Comércio atacadista de mercadorias em geral, com predominância de insumos agropecuários"
+  },
+  {
+    "id": "46931",
+    "name": "Comércio atacadista de mercadorias em geral, sem predominância de alimentos ou de insumos agropecuários"
+  },
+  {
+    "id": "47113",
+    "name": "Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - hipermercados e supermercados"
+  },
+  {
+    "id": "47121",
+    "name": "Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns"
+  },
+  {
+    "id": "47130",
+    "name": "Comércio varejista de mercadorias em geral, sem predominância de produtos alimentícios"
+  },
+  {
+    "id": "47211",
+    "name": "Comércio varejista de produtos de padaria, laticínio, doces, balas e semelhantes"
+  },
+  {
+    "id": "47229",
+    "name": "Comércio varejista de carnes e pescados - açougues e peixarias"
+  },
+  {
+    "id": "47237",
+    "name": "Comércio varejista de bebidas"
+  },
+  {
+    "id": "47245",
+    "name": "Comércio varejista de hortifrutigranjeiros"
+  },
+  {
+    "id": "47296",
+    "name": "Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente; produtos do fumo"
+  },
+  {
+    "id": "47318",
+    "name": "Comércio varejista de combustíveis para veículos automotores"
+  },
+  {
+    "id": "47326",
+    "name": "Comércio varejista de lubrificantes"
+  },
+  {
+    "id": "47415",
+    "name": "Comércio varejista de tintas e materiais para pintura"
+  },
+  {
+    "id": "47423",
+    "name": "Comércio varejista de material elétrico"
+  },
+  {
+    "id": "47431",
+    "name": "Comércio varejista de vidros"
+  },
+  {
+    "id": "47440",
+    "name": "Comércio varejista de ferragens, madeira e materiais de construção"
+  },
+  {
+    "id": "47512",
+    "name": "Comércio varejista especializado de equipamentos e suprimentos de informática"
+  },
+  {
+    "id": "47521",
+    "name": "Comércio varejista especializado de equipamentos de telefonia e comunicação"
+  },
+  {
+    "id": "47539",
+    "name": "Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo"
+  },
+  {
+    "id": "47547",
+    "name": "Comércio varejista especializado de móveis, colchoaria e artigos de iluminação"
+  },
+  {
+    "id": "47555",
+    "name": "Comércio varejista especializado de tecidos e artigos de cama, mesa e banho"
+  },
+  {
+    "id": "47563",
+    "name": "Comércio varejista especializado de instrumentos musicais e acessórios"
+  },
+  {
+    "id": "47571",
+    "name": "Comércio varejista especializado de peças e acessórios para aparelhos eletroeletrônicos para uso doméstico, exceto informática e comunicação"
+  },
+  {
+    "id": "47598",
+    "name": "Comércio varejista de artigos de uso doméstico não especificados anteriormente"
+  },
+  {
+    "id": "47610",
+    "name": "Comércio varejista de livros, jornais, revistas e papelaria"
+  },
+  {
+    "id": "47628",
+    "name": "Comércio varejista de discos, CDs, DVDs e fitas"
+  },
+  {
+    "id": "47636",
+    "name": "Comércio varejista de artigos recreativos e esportivos"
+  },
+  {
+    "id": "47717",
+    "name": "Comércio varejista de produtos farmacêuticos para uso humano e veterinário"
+  },
+  {
+    "id": "47725",
+    "name": "Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal"
+  },
+  {
+    "id": "47733",
+    "name": "Comércio varejista de artigos médicos e ortopédicos"
+  },
+  {
+    "id": "47741",
+    "name": "Comércio varejista de artigos de óptica"
+  },
+  {
+    "id": "47814",
+    "name": "Comércio varejista de artigos do vestuário e acessórios"
+  },
+  {
+    "id": "47822",
+    "name": "Comércio varejista de calçados e artigos de viagem"
+  },
+  {
+    "id": "47831",
+    "name": "Comércio varejista de jóias e relógios"
+  },
+  {
+    "id": "47849",
+    "name": "Comércio varejista de gás liqüefeito de petróleo (GLP)"
+  },
+  {
+    "id": "47857",
+    "name": "Comércio varejista de artigos usados"
+  },
+  {
+    "id": "47890",
+    "name": "Comércio varejista de outros produtos novos não especificados anteriormente"
+  },
+  {
+    "id": "47903",
+    "name": "Comércio ambulante e outros tipos de comércio varejista"
+  },
+  {
+    "id": "49116",
+    "name": "Transporte ferroviário de carga"
+  },
+  {
+    "id": "49124",
+    "name": "Transporte metroferroviário de passageiros"
+  },
+  {
+    "id": "49213",
+    "name": "Transporte rodoviário coletivo de passageiros, com itinerário fixo, municipal e em região metropolitana"
+  },
+  {
+    "id": "49221",
+    "name": "Transporte rodoviário coletivo de passageiros, com itinerário fixo, intermunicipal, interestadual e internacional"
+  },
+  {
+    "id": "49230",
+    "name": "Transporte rodoviário de táxi"
+  },
+  {
+    "id": "49248",
+    "name": "Transporte escolar"
+  },
+  {
+    "id": "49299",
+    "name": "Transporte rodoviário coletivo de passageiros, sob regime de fretamento, e outros transportes rodoviários não especificados anteriormente"
+  },
+  {
+    "id": "49302",
+    "name": "Transporte rodoviário de carga"
+  },
+  {
+    "id": "49400",
+    "name": "Transporte dutoviário"
+  },
+  {
+    "id": "49507",
+    "name": "Trens turísticos, teleféricos e similares"
+  },
+  {
+    "id": "50114",
+    "name": "Transporte marítimo de cabotagem"
+  },
+  {
+    "id": "50122",
+    "name": "Transporte marítimo de longo curso"
+  },
+  {
+    "id": "50211",
+    "name": "Transporte por navegação interior de carga"
+  },
+  {
+    "id": "50220",
+    "name": "Transporte por navegação interior de passageiros em linhas regulares"
+  },
+  {
+    "id": "50301",
+    "name": "Navegação de apoio"
+  },
+  {
+    "id": "50912",
+    "name": "Transporte por navegação de travessia"
+  },
+  {
+    "id": "50998",
+    "name": "Transportes aquaviários não especificados anteriormente"
+  },
+  {
+    "id": "51111",
+    "name": "Transporte aéreo de passageiros regular"
+  },
+  {
+    "id": "51129",
+    "name": "Transporte aéreo de passageiros não regular"
+  },
+  {
+    "id": "51200",
+    "name": "Transporte aéreo de carga"
+  },
+  {
+    "id": "51307",
+    "name": "Transporte espacial"
+  },
+  {
+    "id": "52117",
+    "name": "Armazenamento"
+  },
+  {
+    "id": "52125",
+    "name": "Carga e descarga"
+  },
+  {
+    "id": "52214",
+    "name": "Concessionárias de rodovias, pontes, túneis e serviços relacionados"
+  },
+  {
+    "id": "52222",
+    "name": "Terminais rodoviários e ferroviários"
+  },
+  {
+    "id": "52231",
+    "name": "Estacionamento de veículos"
+  },
+  {
+    "id": "52290",
+    "name": "Atividades auxiliares dos transportes terrestres não especificadas anteriormente"
+  },
+  {
+    "id": "52311",
+    "name": "Gestão de portos e terminais"
+  },
+  {
+    "id": "52320",
+    "name": "Atividades de agenciamento marítimo"
+  },
+  {
+    "id": "52397",
+    "name": "Atividades auxiliares dos transportes aquaviários não especificadas anteriormente"
+  },
+  {
+    "id": "52401",
+    "name": "Atividades auxiliares dos transportes aéreos"
+  },
+  {
+    "id": "52508",
+    "name": "Atividades relacionadas à organização do transporte de carga"
+  },
+  {
+    "id": "53105",
+    "name": "Atividades de Correio"
+  },
+  {
+    "id": "53202",
+    "name": "Atividades de malote e de entrega"
+  },
+  {
+    "id": "55108",
+    "name": "Hotéis e similares"
+  },
+  {
+    "id": "55906",
+    "name": "Outros tipos de alojamento não especificados anteriormente"
+  },
+  {
+    "id": "56112",
+    "name": "Restaurantes e outros estabelecimentos de serviços de alimentação e bebidas"
+  },
+  {
+    "id": "56121",
+    "name": "Serviços ambulantes de alimentação"
+  },
+  {
+    "id": "56201",
+    "name": "Serviços de catering, bufê e outros serviços de comida preparada"
+  },
+  {
+    "id": "58115",
+    "name": "Edição de livros"
+  },
+  {
+    "id": "58123",
+    "name": "Edição de jornais"
+  },
+  {
+    "id": "58131",
+    "name": "Edição de revistas"
+  },
+  {
+    "id": "58191",
+    "name": "Edição de cadastros, listas e outros produtos gráficos"
+  },
+  {
+    "id": "58212",
+    "name": "Edição integrada à impressão de livros"
+  },
+  {
+    "id": "58221",
+    "name": "Edição integrada à impressão de jornais"
+  },
+  {
+    "id": "58239",
+    "name": "Edição integrada à impressão de revistas"
+  },
+  {
+    "id": "58298",
+    "name": "Edição integrada à impressão de cadastros, listas e outros produtos gráficos"
+  },
+  {
+    "id": "59111",
+    "name": "Atividades de produção cinematográfica, de vídeos e de programas de televisão"
+  },
+  {
+    "id": "59120",
+    "name": "Atividades de pós-produção cinematográfica, de vídeos e de programas de televisão"
+  },
+  {
+    "id": "59138",
+    "name": "Distribuição cinematográfica, de vídeo e de programas de televisão"
+  },
+  {
+    "id": "59146",
+    "name": "Atividades de exibição cinematográfica"
+  },
+  {
+    "id": "59201",
+    "name": "Atividades de gravação de som e de edição de música"
+  },
+  {
+    "id": "60101",
+    "name": "Atividades de rádio"
+  },
+  {
+    "id": "60217",
+    "name": "Atividades de televisão aberta"
+  },
+  {
+    "id": "60225",
+    "name": "Programadoras e atividades relacionadas à televisão por assinatura"
+  },
+  {
+    "id": "61108",
+    "name": "Telecomunicações por fio"
+  },
+  {
+    "id": "61205",
+    "name": "Telecomunicações sem fio"
+  },
+  {
+    "id": "61302",
+    "name": "Telecomunicações por satélite"
+  },
+  {
+    "id": "61418",
+    "name": "Operadoras de televisão por assinatura por cabo"
+  },
+  {
+    "id": "61426",
+    "name": "Operadoras de televisão por assinatura por micro-ondas"
+  },
+  {
+    "id": "61434",
+    "name": "Operadoras de televisão por assinatura por satélite"
+  },
+  {
+    "id": "61906",
+    "name": "Outras atividades de telecomunicações"
+  },
+  {
+    "id": "62015",
+    "name": "Desenvolvimento de programas de computador sob encomenda"
+  },
+  {
+    "id": "62023",
+    "name": "Desenvolvimento e licenciamento de programas de computador customizáveis"
+  },
+  {
+    "id": "62031",
+    "name": "Desenvolvimento e licenciamento de programas de computador não customizáveis"
+  },
+  {
+    "id": "62040",
+    "name": "Consultoria em tecnologia da informação"
+  },
+  {
+    "id": "62091",
+    "name": "Suporte técnico, manutenção e outros serviços em tecnologia da informação"
+  },
+  {
+    "id": "63119",
+    "name": "Tratamento de dados, provedores de serviços de aplicação e serviços de hospedagem na Internet"
+  },
+  {
+    "id": "63194",
+    "name": "Portais, provedores de conteúdo e outros serviços de informação na Internet"
+  },
+  {
+    "id": "63917",
+    "name": "Agências de notícias"
+  },
+  {
+    "id": "63992",
+    "name": "Outras atividades de prestação de serviços de informação não especificadas anteriormente"
+  },
+  {
+    "id": "64107",
+    "name": "Banco Central"
+  },
+  {
+    "id": "64212",
+    "name": "Bancos comerciais"
+  },
+  {
+    "id": "64221",
+    "name": "Bancos múltiplos, com carteira comercial"
+  },
+  {
+    "id": "64239",
+    "name": "Caixas econômicas"
+  },
+  {
+    "id": "64247",
+    "name": "Crédito cooperativo"
+  },
+  {
+    "id": "64310",
+    "name": "Bancos múltiplos, sem carteira comercial"
+  },
+  {
+    "id": "64328",
+    "name": "Bancos de investimento"
+  },
+  {
+    "id": "64336",
+    "name": "Bancos de desenvolvimento"
+  },
+  {
+    "id": "64344",
+    "name": "Agências de fomento"
+  },
+  {
+    "id": "64352",
+    "name": "Crédito imobiliário"
+  },
+  {
+    "id": "64361",
+    "name": "Sociedades de crédito, financiamento e investimento - financeiras"
+  },
+  {
+    "id": "64379",
+    "name": "Sociedades de crédito ao microempreendedor"
+  },
+  {
+    "id": "64387",
+    "name": "Bancos de câmbio e outras instituições de intermediação não monetária"
+  },
+  {
+    "id": "64409",
+    "name": "Arrendamento mercantil"
+  },
+  {
+    "id": "64506",
+    "name": "Sociedades de capitalização"
+  },
+  {
+    "id": "64611",
+    "name": "Holdings de instituições financeiras"
+  },
+  {
+    "id": "64620",
+    "name": "Holdings de instituições não financeiras"
+  },
+  {
+    "id": "64638",
+    "name": "Outras sociedades de participação, exceto holdings"
+  },
+  {
+    "id": "64701",
+    "name": "Fundos de investimento"
+  },
+  {
+    "id": "64913",
+    "name": "Sociedades de fomento mercantil - factoring"
+  },
+  {
+    "id": "64921",
+    "name": "Securitização de créditos"
+  },
+  {
+    "id": "64930",
+    "name": "Administração de consórcios para aquisição de bens e direitos"
+  },
+  {
+    "id": "64999",
+    "name": "Outras atividades de serviços financeiros não especificadas anteriormente"
+  },
+  {
+    "id": "65111",
+    "name": "Seguros de vida"
+  },
+  {
+    "id": "65120",
+    "name": "Seguros não vida"
+  },
+  {
+    "id": "65201",
+    "name": "Seguros-saúde"
+  },
+  {
+    "id": "65308",
+    "name": "Resseguros"
+  },
+  {
+    "id": "65413",
+    "name": "Previdência complementar fechada"
+  },
+  {
+    "id": "65421",
+    "name": "Previdência complementar aberta"
+  },
+  {
+    "id": "65502",
+    "name": "Planos de saúde"
+  },
+  {
+    "id": "66118",
+    "name": "Administração de bolsas e mercados de balcão organizados"
+  },
+  {
+    "id": "66126",
+    "name": "Atividades de intermediários em transações de títulos, valores mobiliários e mercadorias"
+  },
+  {
+    "id": "66134",
+    "name": "Administração de cartões de crédito"
+  },
+  {
+    "id": "66193",
+    "name": "Atividades auxiliares dos serviços financeiros não especificadas anteriormente"
+  },
+  {
+    "id": "66215",
+    "name": "Avaliação de riscos e perdas"
+  },
+  {
+    "id": "66223",
+    "name": "Corretores e agentes de seguros, de planos de previdência complementar e de saúde"
+  },
+  {
+    "id": "66291",
+    "name": "Atividades auxiliares dos seguros, da previdência complementar e dos planos de saúde não especificadas anteriormente"
+  },
+  {
+    "id": "66304",
+    "name": "Atividades de administração de fundos por contrato ou comissão"
+  },
+  {
+    "id": "68102",
+    "name": "Atividades imobiliárias de imóveis próprios"
+  },
+  {
+    "id": "68218",
+    "name": "Intermediação na compra, venda e aluguel de imóveis"
+  },
+  {
+    "id": "68226",
+    "name": "Gestão e administração da propriedade imobiliária"
+  },
+  {
+    "id": "69117",
+    "name": "Atividades jurídicas, exceto cartórios"
+  },
+  {
+    "id": "69125",
+    "name": "Cartórios"
+  },
+  {
+    "id": "69206",
+    "name": "Atividades de contabilidade, consultoria e auditoria contábil e tributária"
+  },
+  {
+    "id": "70107",
+    "name": "Sedes de empresas e unidades administrativas locais"
+  },
+  {
+    "id": "70204",
+    "name": "Atividades de consultoria em gestão empresarial"
+  },
+  {
+    "id": "71111",
+    "name": "Serviços de arquitetura"
+  },
+  {
+    "id": "71120",
+    "name": "Serviços de engenharia"
+  },
+  {
+    "id": "71197",
+    "name": "Atividades técnicas relacionadas à arquitetura e engenharia"
+  },
+  {
+    "id": "71201",
+    "name": "Testes e análises técnicas"
+  },
+  {
+    "id": "72100",
+    "name": "Pesquisa e desenvolvimento experimental em ciências físicas e naturais"
+  },
+  {
+    "id": "72207",
+    "name": "Pesquisa e desenvolvimento experimental em ciências sociais e humanas"
+  },
+  {
+    "id": "73114",
+    "name": "Agências de publicidade"
+  },
+  {
+    "id": "73122",
+    "name": "Agenciamento de espaços para publicidade, exceto em veículos de comunicação"
+  },
+  {
+    "id": "73190",
+    "name": "Atividades de publicidade não especificadas anteriormente"
+  },
+  {
+    "id": "73203",
+    "name": "Pesquisas de mercado e de opinião pública"
+  },
+  {
+    "id": "74102",
+    "name": "Design e decoração de interiores"
+  },
+  {
+    "id": "74200",
+    "name": "Atividades fotográficas e similares"
+  },
+  {
+    "id": "74901",
+    "name": "Atividades profissionais, científicas e técnicas não especificadas anteriormente"
+  },
+  {
+    "id": "75001",
+    "name": "Atividades veterinárias"
+  },
+  {
+    "id": "77110",
+    "name": "Locação de automóveis sem condutor"
+  },
+  {
+    "id": "77195",
+    "name": "Locação de meios de transporte, exceto automóveis, sem condutor"
+  },
+  {
+    "id": "77217",
+    "name": "Aluguel de equipamentos recreativos e esportivos"
+  },
+  {
+    "id": "77225",
+    "name": "Aluguel de fitas de vídeo, DVDs e similares"
+  },
+  {
+    "id": "77233",
+    "name": "Aluguel de objetos do vestuário, jóias e acessórios"
+  },
+  {
+    "id": "77292",
+    "name": "Aluguel de objetos pessoais e domésticos não especificados anteriormente"
+  },
+  {
+    "id": "77314",
+    "name": "Aluguel de máquinas e equipamentos agrícolas sem operador"
+  },
+  {
+    "id": "77322",
+    "name": "Aluguel de máquinas e equipamentos para construção sem operador"
+  },
+  {
+    "id": "77331",
+    "name": "Aluguel de máquinas e equipamentos para escritório"
+  },
+  {
+    "id": "77390",
+    "name": "Aluguel de máquinas e equipamentos não especificados anteriormente"
+  },
+  {
+    "id": "77403",
+    "name": "Gestão de ativos intangíveis não financeiros"
+  },
+  {
+    "id": "78108",
+    "name": "Seleção e agenciamento de mão de obra"
+  },
+  {
+    "id": "78205",
+    "name": "Locação de mão de obra temporária"
+  },
+  {
+    "id": "78302",
+    "name": "Fornecimento e gestão de recursos humanos para terceiros"
+  },
+  {
+    "id": "79112",
+    "name": "Agências de viagens"
+  },
+  {
+    "id": "79121",
+    "name": "Operadores turísticos"
+  },
+  {
+    "id": "79902",
+    "name": "Serviços de reservas e outros serviços de turismo não especificados anteriormente"
+  },
+  {
+    "id": "80111",
+    "name": "Atividades de vigilância e segurança privada"
+  },
+  {
+    "id": "80129",
+    "name": "Atividades de transporte de valores"
+  },
+  {
+    "id": "80200",
+    "name": "Atividades de monitoramento de sistemas de segurança"
+  },
+  {
+    "id": "80307",
+    "name": "Atividades de investigação particular"
+  },
+  {
+    "id": "81117",
+    "name": "Serviços combinados para apoio a edifícios, exceto condomínios prediais"
+  },
+  {
+    "id": "81125",
+    "name": "Condomínios prediais"
+  },
+  {
+    "id": "81214",
+    "name": "Limpeza em prédios e em domicílios"
+  },
+  {
+    "id": "81222",
+    "name": "Imunização e controle de pragas urbanas"
+  },
+  {
+    "id": "81290",
+    "name": "Atividades de limpeza não especificadas anteriormente"
+  },
+  {
+    "id": "81303",
+    "name": "Atividades paisagísticas"
+  },
+  {
+    "id": "82113",
+    "name": "Serviços combinados de escritório e apoio administrativo"
+  },
+  {
+    "id": "82199",
+    "name": "Fotocópias, preparação de documentos e outros serviços especializados de apoio administrativo"
+  },
+  {
+    "id": "82202",
+    "name": "Atividades de teleatendimento"
+  },
+  {
+    "id": "82300",
+    "name": "Atividades de organização de eventos, exceto culturais e esportivos"
+  },
+  {
+    "id": "82911",
+    "name": "Atividades de cobrança e informações cadastrais"
+  },
+  {
+    "id": "82920",
+    "name": "Envasamento e empacotamento sob contrato"
+  },
+  {
+    "id": "82997",
+    "name": "Atividades de serviços prestados principalmente às empresas não especificadas anteriormente"
+  },
+  {
+    "id": "84116",
+    "name": "Administração pública em geral"
+  },
+  {
+    "id": "84124",
+    "name": "Regulação das atividades de saúde, educação, serviços culturais e outros serviços sociais"
+  },
+  {
+    "id": "84132",
+    "name": "Regulação das atividades econômicas"
+  },
+  {
+    "id": "84213",
+    "name": "Relações exteriores"
+  },
+  {
+    "id": "84221",
+    "name": "Defesa"
+  },
+  {
+    "id": "84230",
+    "name": "Justiça"
+  },
+  {
+    "id": "84248",
+    "name": "Segurança e ordem pública"
+  },
+  {
+    "id": "84256",
+    "name": "Defesa Civil"
+  },
+  {
+    "id": "84302",
+    "name": "Seguridade social obrigatória"
+  },
+  {
+    "id": "85112",
+    "name": "Educação infantil - creche"
+  },
+  {
+    "id": "85121",
+    "name": "Educação infantil - pré-escola"
+  },
+  {
+    "id": "85139",
+    "name": "Ensino fundamental"
+  },
+  {
+    "id": "85201",
+    "name": "Ensino médio"
+  },
+  {
+    "id": "85317",
+    "name": "Educação superior - graduação"
+  },
+  {
+    "id": "85325",
+    "name": "Educação superior - graduação e pós-graduação"
+  },
+  {
+    "id": "85333",
+    "name": "Educação superior - pós-graduação e extensão"
+  },
+  {
+    "id": "85414",
+    "name": "Educação profissional de nível técnico"
+  },
+  {
+    "id": "85422",
+    "name": "Educação profissional de nível tecnológico"
+  },
+  {
+    "id": "85503",
+    "name": "Atividades de apoio à educação"
+  },
+  {
+    "id": "85911",
+    "name": "Ensino de esportes"
+  },
+  {
+    "id": "85929",
+    "name": "Ensino de arte e cultura"
+  },
+  {
+    "id": "85937",
+    "name": "Ensino de idiomas"
+  },
+  {
+    "id": "85996",
+    "name": "Atividades de ensino não especificadas anteriormente"
+  },
+  {
+    "id": "86101",
+    "name": "Atividades de atendimento hospitalar"
+  },
+  {
+    "id": "86216",
+    "name": "Serviços móveis de atendimento a urgências"
+  },
+  {
+    "id": "86224",
+    "name": "Serviços de remoção de pacientes, exceto os serviços móveis de atendimento a urgências"
+  },
+  {
+    "id": "86305",
+    "name": "Atividades de atenção ambulatorial executadas por médicos e odontólogos"
+  },
+  {
+    "id": "86402",
+    "name": "Atividades de serviços de complementação diagnóstica e terapêutica"
+  },
+  {
+    "id": "86500",
+    "name": "Atividades de profissionais da área de saúde, exceto médicos e odontólogos"
+  },
+  {
+    "id": "86607",
+    "name": "Atividades de apoio à gestão de saúde"
+  },
+  {
+    "id": "86909",
+    "name": "Atividades de atenção à saúde humana não especificadas anteriormente"
+  },
+  {
+    "id": "87115",
+    "name": "Atividades de assistência a idosos, deficientes físicos, imunodeprimidos e convalescentes prestadas em residências coletivas e particulares"
+  },
+  {
+    "id": "87123",
+    "name": "Atividades de fornecimento de infraestrutura de apoio e assistência a paciente no domicílio"
+  },
+  {
+    "id": "87204",
+    "name": "Atividades de assistência psicossocial e à saúde a portadores de distúrbios psíquicos, deficiência mental e dependência química"
+  },
+  {
+    "id": "87301",
+    "name": "Atividades de assistência social prestadas em residências coletivas e particulares"
+  },
+  {
+    "id": "88006",
+    "name": "Serviços de assistência social sem alojamento"
+  },
+  {
+    "id": "90019",
+    "name": "Artes cênicas, espetáculos e atividades complementares"
+  },
+  {
+    "id": "90027",
+    "name": "Criação artística"
+  },
+  {
+    "id": "90035",
+    "name": "Gestão de espaços para artes cênicas, espetáculos e outras atividades artísticas"
+  },
+  {
+    "id": "91015",
+    "name": "Atividades de bibliotecas e arquivos"
+  },
+  {
+    "id": "91023",
+    "name": "Atividades de museus e de exploração, restauração artística e conservação de lugares e prédios históricos e atrações similares"
+  },
+  {
+    "id": "91031",
+    "name": "Atividades de jardins botânicos, zoológicos, parques nacionais, reservas ecológicas e áreas de proteção ambiental"
+  },
+  {
+    "id": "92003",
+    "name": "Atividades de exploração de jogos de azar e apostas"
+  },
+  {
+    "id": "93115",
+    "name": "Gestão de instalações de esportes"
+  },
+  {
+    "id": "93123",
+    "name": "Clubes sociais, esportivos e similares"
+  },
+  {
+    "id": "93131",
+    "name": "Atividades de condicionamento físico"
+  },
+  {
+    "id": "93191",
+    "name": "Atividades esportivas não especificadas anteriormente"
+  },
+  {
+    "id": "93212",
+    "name": "Parques de diversão e parques temáticos"
+  },
+  {
+    "id": "93298",
+    "name": "Atividades de recreação e lazer não especificadas anteriormente"
+  },
+  {
+    "id": "94111",
+    "name": "Atividades de organizações associativas patronais e empresariais"
+  },
+  {
+    "id": "94120",
+    "name": "Atividades de organizações associativas profissionais"
+  },
+  {
+    "id": "94201",
+    "name": "Atividades de organizações sindicais"
+  },
+  {
+    "id": "94308",
+    "name": "Atividades de associações de defesa de direitos sociais"
+  },
+  {
+    "id": "94910",
+    "name": "Atividades de organizações religiosas"
+  },
+  {
+    "id": "94928",
+    "name": "Atividades de organizações políticas"
+  },
+  {
+    "id": "94936",
+    "name": "Atividades de organizações associativas ligadas à cultura e à arte"
+  },
+  {
+    "id": "94995",
+    "name": "Atividades associativas não especificadas anteriormente"
+  },
+  {
+    "id": "95118",
+    "name": "Reparação e manutenção de computadores e de equipamentos periféricos"
+  },
+  {
+    "id": "95126",
+    "name": "Reparação e manutenção de equipamentos de comunicação"
+  },
+  {
+    "id": "95215",
+    "name": "Reparação e manutenção de equipamentos eletroeletrônicos de uso pessoal e doméstico"
+  },
+  {
+    "id": "95291",
+    "name": "Reparação e manutenção de objetos e equipamentos pessoais e domésticos não especificados anteriormente"
+  },
+  {
+    "id": "96017",
+    "name": "Lavanderias, tinturarias e toalheiros"
+  },
+  {
+    "id": "96025",
+    "name": "Cabeleireiros e outras atividades de tratamento de beleza"
+  },
+  {
+    "id": "96033",
+    "name": "Atividades funerárias e serviços relacionados"
+  },
+  {
+    "id": "96092",
+    "name": "Atividades de serviços pessoais não especificadas anteriormente"
+  },
+  {
+    "id": "97005",
+    "name": "Serviços domésticos"
+  },
+  {
+    "id": "99008",
+    "name": "Organismos internacionais e outras instituições extraterritoriais"
+  }
+]

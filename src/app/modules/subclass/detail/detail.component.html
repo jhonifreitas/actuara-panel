@@ -1,0 +1,38 @@
+<mat-toolbar color="primary">
+  <span>Subclasse</span>
+</mat-toolbar>
+<div mat-dialog-content>
+  
+  <mat-list>
+    <mat-list-item>
+      <mat-icon matListIcon>more_horiz</mat-icon>
+      <div matLine><strong> Código </strong></div>
+      <div matLine class="info"> {{ object.id }} </div>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon matListIcon>more_horiz</mat-icon>
+      <div matLine><strong> Nome </strong></div>
+      <div matLine class="info"> {{ object.name }} </div>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon matListIcon>more_horiz</mat-icon>
+      <div matLine><strong> Classe </strong></div>
+      <div matLine class="info"> {{ object.classId }} </div>
+    </mat-list-item>
+    <mat-list-item class="h-auto">
+      <mat-icon matListIcon>lock</mat-icon>
+      <div matLine><strong> Códigos Consema </strong></div>
+      <div matLine>
+        <mat-chip-list *ngIf="object.consemaCodes.length">
+          <mat-chip *ngFor="let code of object.consemaCodes" color="primary" selected>{{ code }}</mat-chip>
+        </mat-chip-list>
+        <span class="info" *ngIf="!object.consemaCodes.length">---</span>
+      </div>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon matListIcon color="warn" *ngIf="object.deletedAt">cancel</mat-icon>
+      <mat-icon matListIcon color="success" *ngIf="!object.deletedAt">check_circle</mat-icon>
+      <div matLine><strong> Obrigatório </strong></div>
+    </mat-list-item>
+  </mat-list>
+</div>

@@ -6,9 +6,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 // COMPONENT
-import { GroupListComponent } from './list/list.component';
-import { GroupFormComponent } from './form/form.component';
-import { GroupDetailComponent } from './detail/detail.component';
+import { ClassListComponent } from './list/list.component';
+import { ClassFormComponent } from './form/form.component';
+import { ClassDetailComponent } from './detail/detail.component';
 
 @NgModule({
   imports: [
@@ -18,13 +18,13 @@ import { GroupDetailComponent } from './detail/detail.component';
     ReactiveFormsModule,
   ],
   declarations: [
-    GroupListComponent,
-    GroupFormComponent,
-    GroupDetailComponent
+    ClassListComponent,
+    ClassFormComponent,
+    ClassDetailComponent
   ],
   entryComponents: [
-    GroupFormComponent,
-    GroupDetailComponent
+    ClassFormComponent,
+    ClassDetailComponent
   ]
 })
-export class GroupModule {}
+export class ClassModule {}

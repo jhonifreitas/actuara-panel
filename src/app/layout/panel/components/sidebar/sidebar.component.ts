@@ -26,6 +26,12 @@ export class SidebarComponent implements OnInit {
   @Output() toggleSideBarForMe: EventEmitter<any> = new EventEmitter();
 
   menuItems: MenuItem[] = [
+    { title: 'Classes', url: '/classes', icon: 'person', hidden: false, permission: {
+      page: Page.ClassPage, role: PageRole.CanList}
+    },
+    { title: 'Subclasses', url: '/subclasses', icon: 'person', hidden: false, permission: {
+      page: Page.SubClassPage, role: PageRole.CanList}
+    },
     { title: 'Administrações', icon: 'verified_user', hidden: false, subItems: [
       { title: 'Usuários', url: '/administracao/usuarios', icon: 'person', hidden: false, permission: {
         page: Page.UserPage, role: PageRole.CanList}

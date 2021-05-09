@@ -4,6 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // DROPZONE
 import { NgxDropzoneModule } from 'ngx-dropzone';
+
+// MODULE
 import { SharedModule } from 'src/app/shared/shared.module';
 
 // COMPONENT

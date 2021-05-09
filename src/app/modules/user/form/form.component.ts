@@ -18,7 +18,7 @@ import { GroupService } from 'src/app/services/firebase/group.service';
 })
 export class UserFormComponent implements OnInit {
 
-  saving = false;
+  submitting = false;
   togglePass = true;
   image?: FileUpload;
   groups: Group[] = [];
@@ -122,7 +122,7 @@ export class UserFormComponent implements OnInit {
 
   async onSubmit(): Promise<void> {
     if (this.formGroup.valid) {
-      this.saving = true;
+      this.submitting = true;
       const value = this.formGroup.value;
       delete value.confirmPass;
       Object.assign(this.data, value);
@@ -138,7 +138,7 @@ export class UserFormComponent implements OnInit {
         }
       });
 
-      this.saving = false;
+      this.submitting = false;
       this._util.message('Usuário salvo com sucesso!', 'success');
       this.dialogRef.close(true);
     } else this._util.message('Verifique os dados antes de salvar!', 'warn');

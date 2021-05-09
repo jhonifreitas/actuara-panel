@@ -15,7 +15,7 @@ import { GroupService } from 'src/app/services/firebase/group.service';
 })
 export class GroupFormComponent implements OnInit {
 
-  saving = false;
+  submitting = false;
   formGroup: FormGroup;
   permissions: {id: string; name: string; pageId: string; roleId: string}[] = [];
 
@@ -59,7 +59,7 @@ export class GroupFormComponent implements OnInit {
 
   async onSubmit(): Promise<void> {
     if (this.formGroup.valid) {
-      this.saving = true;
+      this.submitting = true;
       const value = this.formGroup.value;
       Object.assign(this.data, value);
       this.data.permissions = value.permissions.map((index: number) => {
@@ -67,7 +67,7 @@ export class GroupFormComponent implements OnInit {
       });
       await this._group.save(this.data);
 
-      this.saving = false;
+      this.submitting = false;
       this._util.message('Grupo salvo com sucesso!', 'success');
       this.dialogRef.close(true);
     } else this._util.message('Verifique os dados antes de salvar!', 'warn');

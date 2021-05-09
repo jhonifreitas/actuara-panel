@@ -16,6 +16,10 @@ export class Permission {
         return 'Usuário';
       case Page.GroupPage:
         return 'Grupo';
+      case Page.ClassPage:
+        return 'Classe';
+      case Page.SubClassPage:
+        return 'SubClasse';
     }
   }
 
@@ -46,6 +50,8 @@ export class Permission {
 export enum Page {
   UserPage = 'user-page',
   GroupPage = 'group-page',
+  ClassPage = 'class-page',
+  SubClassPage = 'subclass-page',
 }
 
 export enum PageRole {

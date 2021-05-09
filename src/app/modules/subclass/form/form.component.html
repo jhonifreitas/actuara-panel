@@ -1,0 +1,47 @@
+<h1 mat-dialog-title>Formulário de subclasse</h1>
+<div mat-dialog-content>
+  <form [formGroup]="formGroup">
+    <app-input label="Código" [control]="controls.id"></app-input>
+    <app-input label="Nome" [control]="controls.name"></app-input>
+    <app-input label="Classe" type="select" [items]="classes" [control]="controls.classId"></app-input>
+    <app-input label="Obrigatório" type="toggle" [control]="controls.required"></app-input>
+
+    <div id="consemaCodes" class="my-2">
+      <div fxLayout="row" fxLayoutGap="20px">
+        <div fxFlex="50">
+          <div matLine><strong> Códigos Consema </strong></div>
+        </div>
+        <div fxFlex="50" class="text-end">
+          <button mat-mini-fab color="primary" (click)="addConsemaCode()">
+            <mat-icon>add</mat-icon>
+          </button>
+        </div>
+      </div>
+
+      <table class="w-100">
+        <tbody formArrayName="consemaCodes">
+          <tr *ngFor="let consemaControl of consemaCodeControl.controls; index as i">
+            <td>
+              <app-input label="Código" [id]="'consemaCode-'+i" [control]="consemaControl"></app-input>
+            </td>
+            <td width="50" class="text-end">
+              <button mat-icon-button color="warn" (click)="removeConsemaCode(i)">
+                <mat-icon>delete</mat-icon>
+              </button>
+            </td>
+          </tr>
+          <tr *ngIf="!consemaCodeControl.controls.length">
+            <td class="text-center">
+              <a href="javascript:void(0)" (click)="addConsemaCode()">+ Adicionar Código</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </form>
+</div>
+<div mat-dialog-actions fxLayoutAlign="end center">
+  <button mat-button mat-dialog-close>Cancelar</button>
+  <button mat-raised-button color="primary" [disabled]="formGroup.invalid" *ngIf="!submitting" (click)="onSubmit()">Salvar</button>
+  <mat-progress-spinner mode="indeterminate" diameter="25" class="ml-2" *ngIf="submitting"></mat-progress-spinner>
+</div>

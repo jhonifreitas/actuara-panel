@@ -10,13 +10,28 @@ import { PermissionGuard } from './guards/permission.guard';
 import { LayoutComponent } from './layout/panel/layout.component';
 import { UserListComponent } from './modules/user/list/list.component';
 import { GroupListComponent } from './modules/group/list/list.component';
+import { ClassListComponent } from './modules/class/list/list.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
+import { SubClassListComponent } from './modules/subclass/list/list.component';
 
 const routes: Routes = [
   { path: 'auth', loadChildren: () => import('./modules/auth/auth.module').then(m => m.AuthModule) },
 
   { path: '', canActivate: [AuthGuard], component: LayoutComponent, children: [
     { path: 'dashboard', component: DashboardComponent },
+
+    {
+      path: 'classes',
+      component: ClassListComponent,
+      canActivate: [PermissionGuard],
+      data: {permissions: [{page: Page.ClassPage, role: PageRole.CanList}]},
+    },
+    {
+      path: 'subclasses',
+      component: SubClassListComponent,
+      canActivate: [PermissionGuard],
+      data: {permissions: [{page: Page.SubClassPage, role: PageRole.CanList}]},
+    },
 
     { path: 'administracao', children: [
       {

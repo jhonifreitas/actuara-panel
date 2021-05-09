@@ -48,6 +48,6 @@
 </div>
 <div mat-dialog-actions fxLayoutAlign="end center">
   <button mat-button mat-dialog-close>Cancelar</button>
-  <button mat-raised-button color="primary" [disabled]="formGroup.invalid" *ngIf="!saving" (click)="onSubmit()">Salvar</button>
-  <mat-progress-spinner mode="indeterminate" diameter="25" class="ml-2" *ngIf="saving"></mat-progress-spinner>
+  <button mat-raised-button color="primary" [disabled]="formGroup.invalid" *ngIf="!submitting" (click)="onSubmit()">Salvar</button>
+  <mat-progress-spinner mode="indeterminate" diameter="25" class="ml-2" *ngIf="submitting"></mat-progress-spinner>
 </div>
