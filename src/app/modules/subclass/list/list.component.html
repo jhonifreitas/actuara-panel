@@ -17,13 +17,21 @@
     <mat-table matSort [dataSource]="dataSource">
   
       <ng-container matColumnDef="id">
-        <mat-header-cell mat-sort-header *matHeaderCellDef fxFlex="15"> Código </mat-header-cell>
-        <mat-cell matRipple *matCellDef="let element" fxFlex="15" fxFlexAlign="stretch" (click)="openDetail(element)"> {{ element.id }} </mat-cell>
+        <mat-header-cell mat-sort-header *matHeaderCellDef fxFlex="10"> Código </mat-header-cell>
+        <mat-cell matRipple *matCellDef="let element" fxFlex="10" fxFlexAlign="stretch" (click)="openDetail(element)"> {{ element.id }} </mat-cell>
       </ng-container>
 
       <ng-container matColumnDef="classId">
-        <mat-header-cell mat-sort-header *matHeaderCellDef fxFlex="15"> Classe </mat-header-cell>
-        <mat-cell matRipple *matCellDef="let element" fxFlex="15" fxFlexAlign="stretch" (click)="openDetail(element)"> {{ element.classId }} </mat-cell>
+        <mat-header-cell mat-sort-header *matHeaderCellDef fxFlex="10" fxLayoutAlign="center center"> Classe </mat-header-cell>
+        <mat-cell matRipple *matCellDef="let element" fxFlex="10" fxLayoutAlign="center center" (click)="openDetail(element)"> {{ element.classId }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="required">
+        <mat-header-cell mat-sort-header *matHeaderCellDef fxFlex="10" fxLayoutAlign="center center"> Obrigatório </mat-header-cell>
+        <mat-cell matRipple *matCellDef="let element" fxFlex="10" fxLayoutAlign="center center" (click)="openDetail(element)">
+          <mat-icon color="warn" *ngIf="!element.required">cancel</mat-icon>
+          <mat-icon color="success" *ngIf="element.required">check_circle</mat-icon>
+        </mat-cell>
       </ng-container>
 
       <ng-container matColumnDef="name">

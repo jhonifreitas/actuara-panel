@@ -22,11 +22,11 @@ export class UserService extends FirebaseAbstract<User> {
   }
 
   async add(data: User): Promise<string> {
-    return this.api.post('users', data).then(res => res.user.id);
+    return this.api.post('user', data).then(res => res.user.id);
   }
 
   async update(id: string, data: Partial<User>): Promise<void> {
-    return this.api.put(`users/${id}`, data);
+    return this.api.put(`user/${id}`, data);
   }
 
   async save(data: User): Promise<string | void> {
