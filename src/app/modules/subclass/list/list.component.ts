@@ -28,10 +28,10 @@ export class SubClassListComponent implements OnInit {
   dataSource!: MatTableDataSource<SubClass>;
   displayedColumns: string[] = ['id', 'classId', 'type', 'name', 'actions'];
 
-  canAdd = this._permission.check(Page.SubClassPage, PageRole.CanAdd);
-  canView = this._permission.check(Page.SubClassPage, PageRole.CanView);
-  canUpdate = this._permission.check(Page.SubClassPage, PageRole.CanUpdate);
-  canDelete = this._permission.check(Page.SubClassPage, PageRole.CanDelete);
+  canAdd = this._permission.check(Page.CNAESubClassPage, PageRole.CanAdd);
+  canView = this._permission.check(Page.CNAESubClassPage, PageRole.CanView);
+  canUpdate = this._permission.check(Page.CNAESubClassPage, PageRole.CanUpdate);
+  canDelete = this._permission.check(Page.CNAESubClassPage, PageRole.CanDelete);
 
   constructor(
     private _util: UtilService,

@@ -16,10 +16,12 @@ export class Permission {
         return 'Usuário';
       case Page.GroupPage:
         return 'Grupo';
-      case Page.ClassPage:
-        return 'Classe';
-      case Page.SubClassPage:
-        return 'SubClasse';
+      case Page.CompanyPage:
+        return 'Empresa';
+      case Page.CNAEClassPage:
+        return 'CNAE - Classe';
+      case Page.CNAESubClassPage:
+        return 'CNAE - SubClasse';
     }
   }
 
@@ -50,8 +52,9 @@ export class Permission {
 export enum Page {
   UserPage = 'user-page',
   GroupPage = 'group-page',
-  ClassPage = 'class-page',
-  SubClassPage = 'subclass-page',
+  CompanyPage = 'company-page',
+  CNAEClassPage = 'cnaeClass-page',
+  CNAESubClassPage = 'caneSubclass-page',
 }
 
 export enum PageRole {

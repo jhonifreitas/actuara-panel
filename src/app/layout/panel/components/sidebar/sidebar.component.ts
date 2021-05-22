@@ -26,11 +26,16 @@ export class SidebarComponent implements OnInit {
   @Output() toggleSideBarForMe: EventEmitter<any> = new EventEmitter();
 
   menuItems: MenuItem[] = [
-    { title: 'Classes', url: '/classes', icon: 'person', hidden: false, permission: {
-      page: Page.ClassPage, role: PageRole.CanList}
-    },
-    { title: 'Subclasses', url: '/subclasses', icon: 'person', hidden: false, permission: {
-      page: Page.SubClassPage, role: PageRole.CanList}
+    { title: 'Cnae', icon: 'pin', hidden: false, subItems: [
+      { title: 'Classes', url: 'cnae/classes', icon: 'filter_1', hidden: false, permission: {
+        page: Page.CNAEClassPage, role: PageRole.CanList}
+      },
+      { title: 'SubClasses', url: 'cnae/subclasses', icon: 'filter_2', hidden: false, permission: {
+        page: Page.CNAESubClassPage, role: PageRole.CanList}
+      },
+    ]},
+    { title: 'Empresas', url: 'empresas', icon: 'business', hidden: false, permission: {
+      page: Page.CompanyPage, role: PageRole.CanList}
     },
     { title: 'Administrações', icon: 'verified_user', hidden: false, subItems: [
       { title: 'Usuários', url: '/administracao/usuarios', icon: 'person', hidden: false, permission: {

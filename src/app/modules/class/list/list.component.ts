@@ -28,10 +28,10 @@ export class ClassListComponent implements OnInit {
   dataSource!: MatTableDataSource<Class>;
   displayedColumns: string[] = ['id', 'name', 'actions'];
 
-  canAdd = this._permission.check(Page.ClassPage, PageRole.CanAdd);
-  canView = this._permission.check(Page.ClassPage, PageRole.CanView);
-  canUpdate = this._permission.check(Page.ClassPage, PageRole.CanUpdate);
-  canDelete = this._permission.check(Page.ClassPage, PageRole.CanDelete);
+  canAdd = this._permission.check(Page.CNAEClassPage, PageRole.CanAdd);
+  canView = this._permission.check(Page.CNAEClassPage, PageRole.CanView);
+  canUpdate = this._permission.check(Page.CNAEClassPage, PageRole.CanUpdate);
+  canDelete = this._permission.check(Page.CNAEClassPage, PageRole.CanDelete);
 
   constructor(
     private _util: UtilService,

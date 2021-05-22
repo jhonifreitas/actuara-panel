@@ -12,6 +12,7 @@ import { UserListComponent } from './modules/user/list/list.component';
 import { GroupListComponent } from './modules/group/list/list.component';
 import { ClassListComponent } from './modules/class/list/list.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
+import { CompanyListComponent } from './modules/company/list/list.component';
 import { SubClassListComponent } from './modules/subclass/list/list.component';
 
 const routes: Routes = [
@@ -19,20 +20,27 @@ const routes: Routes = [
 
   { path: '', canActivate: [AuthGuard], component: LayoutComponent, children: [
     { path: 'dashboard', component: DashboardComponent },
-
+    { path: 'cnae', children: [
+      { path: '', redirectTo: 'classes', pathMatch: 'full' },
+      {
+        path: 'classes',
+        component: ClassListComponent,
+        canActivate: [PermissionGuard],
+        data: {permissions: [{page: Page.CNAEClassPage, role: PageRole.CanList}]},
+      },
+      {
+        path: 'subclasses',
+        component: SubClassListComponent,
+        canActivate: [PermissionGuard],
+        data: {permissions: [{page: Page.CNAESubClassPage, role: PageRole.CanList}]},
+      },
+    ] },
     {
-      path: 'classes',
-      component: ClassListComponent,
+      path: 'empresas',
+      component: CompanyListComponent,
       canActivate: [PermissionGuard],
-      data: {permissions: [{page: Page.ClassPage, role: PageRole.CanList}]},
+      data: {permissions: [{page: Page.CompanyPage, role: PageRole.CanList}]},
     },
-    {
-      path: 'subclasses',
-      component: SubClassListComponent,
-      canActivate: [PermissionGuard],
-      data: {permissions: [{page: Page.SubClassPage, role: PageRole.CanList}]},
-    },
-
     { path: 'administracao', children: [
       {
         path: 'usuarios',

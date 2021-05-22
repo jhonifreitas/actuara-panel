@@ -1,7 +1,6 @@
-<h1 mat-dialog-title>Formulário de usuário</h1>
+<h1 mat-dialog-title>Formulário de empresa</h1>
 <div mat-dialog-content>
   <form [formGroup]="formGroup">
-
     <div class="img-uploaded" *ngIf="image">
       <button mat-mini-fab color="warn" (click)="deleteImage()">
         <mat-icon>delete</mat-icon>
@@ -11,18 +10,15 @@
     <ngx-dropzone (change)="takeImage($event)" accept="image/jpeg,image/jpg,image/png" [multiple]="false" class="mb-2" *ngIf="!image">
       <ngx-dropzone-label>Arraste os arquivos aqui ou clique para fazer o upload.</ngx-dropzone-label>
     </ngx-dropzone>
-    
-    <app-input label="Nome" [control]="controls.name" [cdkFocus]="true"></app-input>
-    <app-input label="E-mail" type="email" [control]="controls.email"></app-input>
-    
-    <div fxLayout="row" fxLayoutGap="20px">
-      <div fxFlex="50">
-        <app-input label="Grupos" type="select" [multiple]="true" [items]="groups" [control]="controls.groups"></app-input>
-      </div>
-      <div fxFlex="50">
-        <app-input label="Permissões" type="select" [multiple]="true" [items]="permissions" [control]="controls.permissions"></app-input>
-      </div>
+
+    <app-input label="Nome" [control]="controls.name"></app-input>
+    <app-input label="CNPJ" [control]="controls.id" [mask]="{format: '00.000.000/0000-00'}" (keyup)="checkId()"></app-input>
+    <div class="mb-2">
+      <app-input label="Parceiro?" type="toggle" [control]="controls.partner"></app-input>
     </div>
+    <app-input label="E-mail" type="email" [control]="controls.email"></app-input>
+
+    <!-- PASSWORD -->
     <div fxLayout="row" fxLayoutGap="20px" *ngIf="!data.id">
       <mat-form-field fxFlex="50">
         <mat-label>Senha</mat-label>
@@ -44,6 +40,30 @@
         <mat-error *ngIf="controls.confirmPass.hasError('passNotSame')">As senhas não <strong>coincidem!</strong></mat-error>
       </mat-form-field>
     </div>
+    
+    <!-- ADDRESS -->
+    <app-input label="CEP" [control]="addressControls.zipcode" [mask]="{format: '00000-000'}" (keyup)="zipcodeChange()"></app-input>
+
+    <div fxLayout="row" fxLayoutGap="20px">
+      <div fxFlex="70">
+        <app-input label="Rua" [control]="addressControls.street"></app-input>
+      </div>
+      <div fxFlex="30">
+        <app-input label="Número" [control]="addressControls.number"></app-input>
+      </div>
+    </div>
+    
+    <app-input label="Bairro" [control]="addressControls.district"></app-input>
+    
+    <div fxLayout="row" fxLayoutGap="20px">
+      <div fxFlex="50">
+        <app-input label="Estado" type="select" [items]="states" selectId="uf" [control]="addressControls.state" (inputChange)="stateChange()"></app-input>
+      </div>
+      <div fxFlex="50">
+        <app-input label="Cidade" type='select' [items]="cities" selectId="name" [control]="addressControls.city"></app-input>
+      </div>
+    </div>
+    <app-input label="Complemento" [control]="addressControls.complement"></app-input>
   </form>
 </div>
 <div mat-dialog-actions fxLayoutAlign="end center">

@@ -14,7 +14,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { QuillModule } from 'ngx-quill'; // QUILL
 import { NgxMaskModule } from 'ngx-mask'; // MASK
 import { NgxCurrencyModule } from 'ngx-currency'; // CURRENCY
-// import { MatSelectFilterModule } from 'mat-select-filter'; // SELECT FILTER
+import { MatSelectFilterModule } from 'mat-select-filter'; // SELECT FILTER
 
 // COMPONENT
 import { InputFormComponent } from './input-form.component';
@@ -31,6 +31,7 @@ import { InputFormComponent } from './input-form.component';
     MatDatepickerModule,
     ReactiveFormsModule,
     MatSlideToggleModule,
+    MatSelectFilterModule,
     QuillModule.forRoot(),
     NgxMaskModule.forRoot(),
   ],

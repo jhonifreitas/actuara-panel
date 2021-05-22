@@ -2,8 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+// FLEX
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 // MATERIAL
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -18,8 +22,10 @@ import { DeleteComponent } from './delete.component';
     FormsModule,
     CommonModule,
     MatIconModule,
+    MatInputModule,
     MatDialogModule,
     MatButtonModule,
+    FlexLayoutModule,
     MatToolbarModule,
     MatFormFieldModule,
     ReactiveFormsModule,
