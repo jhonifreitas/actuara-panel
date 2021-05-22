@@ -2,9 +2,9 @@
 <div mat-dialog-content>
   <form [formGroup]="formGroup">
     <app-input label="Código" [control]="controls.id" [mask]="{format: '00.00-0-00'}" (keyup)="checkId()"></app-input>
-    <app-input label="Nome" [control]="controls.name"></app-input>
+    <app-input label="Descrição" [control]="controls.description"></app-input>
     <app-input label="Obrigatório" type="select" [items]="types" [control]="controls.type"></app-input>
-    <app-input label="Classe" type="select" [items]="classes" [control]="controls.classId"></app-input>
+    <app-input label="Classe" type="select" [items]="classes" selectName="description" [control]="controls.classId"></app-input>
 
     <div id="consemaCodes" class="my-2">
       <div fxLayout="row" fxLayoutGap="20px">

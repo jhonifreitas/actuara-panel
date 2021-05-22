@@ -26,7 +26,7 @@ export class ClassListComponent implements OnInit {
   loading = true;
   filter!: string;
   dataSource!: MatTableDataSource<Class>;
-  displayedColumns: string[] = ['id', 'name', 'actions'];
+  displayedColumns: string[] = ['id', 'description', 'actions'];
 
   canAdd = this._permission.check(Page.CNAEClassPage, PageRole.CanAdd);
   canView = this._permission.check(Page.CNAEClassPage, PageRole.CanView);

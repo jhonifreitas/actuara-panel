@@ -34,9 +34,9 @@ export class SubClassFormComponent implements OnInit {
   ) {
     this.formGroup = this.formBuilder.group({
       id: new FormControl('', [Validators.required, Validators.minLength(7), Validators.maxLength(7)]),
-      name: new FormControl('', Validators.required),
       type: new FormControl(null, Validators.required),
       classId: new FormControl('', Validators.required),
+      description: new FormControl('', Validators.required),
       consemaCodes: this.formBuilder.array([]),
     });
   }
@@ -55,8 +55,8 @@ export class SubClassFormComponent implements OnInit {
     return this.formGroup.controls as {
       id: FormControl,
       type: FormControl
-      name: FormControl,
       classId: FormControl,
+      description: FormControl,
     };
   }
 
@@ -67,7 +67,7 @@ export class SubClassFormComponent implements OnInit {
   async getClasses() {
     this.classes = await this._class.getAllActive();
     this.classes.map(item => {
-      item.name = `${this.mask.transform(item.id, '00.00-0')} - ${item.name}`;
+      item.description = `${this.mask.transform(item.id, '00.00-0')} - ${item.description}`;
       return item;
     });
     this.classes = this.classes.sort((a, b) => a.id.localeCompare(b.id));

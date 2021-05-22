@@ -2,7 +2,7 @@
 <div mat-dialog-content>
   <form [formGroup]="formGroup">
     <app-input label="Código" [control]="controls.id" [mask]="{format: '00.00-0'}" (keyup)="checkId()"></app-input>
-    <app-input label="Nome" [control]="controls.name"></app-input>
+    <app-input label="Descrição" [control]="controls.description"></app-input>
   </form>
 </div>
 <div mat-dialog-actions fxLayoutAlign="end center">

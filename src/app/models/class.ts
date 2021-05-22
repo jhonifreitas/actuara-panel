@@ -1,14 +1,14 @@
 import { Base } from './base';
 
 export class Class extends Base {
-  name!: string;
+  description!: string;
 }
 
 export class SubClass extends Base {
-  type!: 'notRequired' | 'required' | 'depend';
-  name!: string;
   classId!: string;
+  description!: string;
   consemaCodes: string[];
+  type!: 'notRequired' | 'required' | 'depend';
 
   constructor() {
     super();

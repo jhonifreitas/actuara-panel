@@ -26,7 +26,7 @@ export class ClassFormComponent implements OnInit {
   ) {
     this.formGroup = this.formBuilder.group({
       id: new FormControl('', [Validators.required, Validators.minLength(5), Validators.maxLength(5)]),
-      name: new FormControl('', Validators.required),
+      description: new FormControl('', Validators.required),
     });
   }
 
@@ -41,7 +41,7 @@ export class ClassFormComponent implements OnInit {
   get controls() {
     return this.formGroup.controls as {
       id: FormControl,
-      name: FormControl
+      description: FormControl
     };
   }
 

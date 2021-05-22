@@ -26,7 +26,7 @@ export class SubClassListComponent implements OnInit {
   loading = true;
   filter!: string;
   dataSource!: MatTableDataSource<SubClass>;
-  displayedColumns: string[] = ['id', 'classId', 'type', 'name', 'actions'];
+  displayedColumns: string[] = ['id', 'classId', 'type', 'description', 'actions'];
 
   canAdd = this._permission.check(Page.CNAESubClassPage, PageRole.CanAdd);
   canView = this._permission.check(Page.CNAESubClassPage, PageRole.CanView);
