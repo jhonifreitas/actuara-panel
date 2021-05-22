@@ -33,9 +33,7 @@ export class ImportComponent {
       if (item.id) {
         const obj = Object.assign(new Class(), item);
         await this._class.set(obj.id, obj);
-      } else {
-        console.log(item);
-      }
+      } else console.log(item);
       this.percent = (i / ClassJson.length) * 100;
     }
     this._util.message('Classes importadas!', 'success');
@@ -52,9 +50,7 @@ export class ImportComponent {
         if (item.consemaCodes) obj.consemaCodes = item.consemaCodes.split(',');
         else obj.consemaCodes = [];
         await this._subclass.set(obj.id, obj);
-      } else {
-        console.log(item);
-      }
+      } else console.log(item);
       this.percent = (i / SubClassJson.length) * 100;
     }
     this._util.message('SubClasses importadas!', 'success');
