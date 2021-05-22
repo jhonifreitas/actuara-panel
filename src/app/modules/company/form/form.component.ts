@@ -123,7 +123,7 @@ export class CompanyFormComponent implements OnInit {
       this.controls.id.setErrors(obj && obj.id !== this.data.id ? {exist: true} : null);
     }
   }
-  
+
   zipcodeChange() {
     const value: string = this.addressControls.zipcode.value;
     if (value.length === 8)

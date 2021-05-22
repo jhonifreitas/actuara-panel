@@ -1,12 +1,12 @@
 import { FormControl } from '@angular/forms';
-import { Component, Input, Output, EventEmitter, SimpleChanges } from '@angular/core';
+import { Component, Input, Output, EventEmitter, SimpleChanges, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-input',
   templateUrl: './input-form.component.html',
   styleUrls: ['./input-form.component.scss']
 })
-export class InputFormComponent {
+export class InputFormComponent implements OnChanges {
 
   @Input() label!: string;
   @Input() control!: FormControl;
