@@ -18,19 +18,22 @@
   
       <ng-container matColumnDef="id">
         <mat-header-cell mat-sort-header *matHeaderCellDef fxFlex="10"> Código </mat-header-cell>
-        <mat-cell matRipple *matCellDef="let element" fxFlex="10" fxFlexAlign="stretch" (click)="openDetail(element)"> {{ element.id }} </mat-cell>
+        <mat-cell matRipple *matCellDef="let element" fxFlex="10" fxFlexAlign="stretch" (click)="openDetail(element)"> {{ element.id | mask:'00.00-0-00' }} </mat-cell>
       </ng-container>
 
       <ng-container matColumnDef="classId">
         <mat-header-cell mat-sort-header *matHeaderCellDef fxFlex="10" fxLayoutAlign="center center"> Classe </mat-header-cell>
-        <mat-cell matRipple *matCellDef="let element" fxFlex="10" fxLayoutAlign="center center" (click)="openDetail(element)"> {{ element.classId }} </mat-cell>
+        <mat-cell matRipple *matCellDef="let element" fxFlex="10" fxLayoutAlign="center center" (click)="openDetail(element)"> {{ element.classId | mask:'00.00-0' }} </mat-cell>
       </ng-container>
 
-      <ng-container matColumnDef="required">
-        <mat-header-cell mat-sort-header *matHeaderCellDef fxFlex="10" fxLayoutAlign="center center"> Obrigatório </mat-header-cell>
-        <mat-cell matRipple *matCellDef="let element" fxFlex="10" fxLayoutAlign="center center" (click)="openDetail(element)">
-          <mat-icon color="warn" *ngIf="!element.required">cancel</mat-icon>
-          <mat-icon color="success" *ngIf="element.required">check_circle</mat-icon>
+      <ng-container matColumnDef="type">
+        <mat-header-cell mat-sort-header *matHeaderCellDef fxFlex="15" fxLayoutAlign="center center"> Tipo </mat-header-cell>
+        <mat-cell matRipple *matCellDef="let element" fxFlex="15" fxLayoutAlign="center center" (click)="openDetail(element)">
+          <mat-chip-list>
+            <mat-chip color="accent" selected *ngIf="element.type === 'depend'">Depende</mat-chip>
+            <mat-chip color="warn" selected *ngIf="element.type === 'required'">Obrigatório</mat-chip>
+            <mat-chip color="primary" selected *ngIf="element.type === 'notRequired'">Não obrigatório</mat-chip>
+          </mat-chip-list>
         </mat-cell>
       </ng-container>
 

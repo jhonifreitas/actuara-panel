@@ -1,7 +1,7 @@
 <h1 mat-dialog-title>Formulário de classe</h1>
 <div mat-dialog-content>
   <form [formGroup]="formGroup">
-    <app-input label="Código" [control]="controls.id"></app-input>
+    <app-input label="Código" [control]="controls.id" [mask]="{format: '00.00-0'}" (keyup)="checkId()"></app-input>
     <app-input label="Nome" [control]="controls.name"></app-input>
   </form>
 </div>

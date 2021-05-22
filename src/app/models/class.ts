@@ -5,14 +5,21 @@ export class Class extends Base {
 }
 
 export class SubClass extends Base {
+  type!: 'notRequired' | 'required' | 'depend';
   name!: string;
   classId!: string;
-  required: boolean;
   consemaCodes: string[];
 
   constructor() {
     super();
-    this.required = false;
     this.consemaCodes = [];
+  }
+
+  static get getTypes() {
+    return [
+      {id: 'depend', name: 'Depende'},
+      {id: 'required', name: 'Obrigatório'},
+      {id: 'notRequired', name: 'Não obrigatório'}
+    ];
   }
 }

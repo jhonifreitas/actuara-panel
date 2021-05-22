@@ -1,12 +1,15 @@
 import { DatePipe } from '@angular/common';
 import { Injectable } from '@angular/core';
 
+// MATERIAL
 import { ComponentType } from '@angular/cdk/portal';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog, MatDialogConfig, MatDialogRef } from '@angular/material/dialog';
 
+// COMPRESS
 import { NgxImageCompressService } from 'ngx-image-compress';
 
+// COMPONENTS
 import { DeleteComponent } from 'src/app/shared/components/delete/delete.component';
 import { LoadingComponent } from 'src/app/shared/components/loading/loading.component';
 

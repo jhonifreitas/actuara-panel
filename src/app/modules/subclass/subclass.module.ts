@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+// MASK
+import { MaskPipe } from 'ngx-mask';
+
 // MODULE
 import { SharedModule } from 'src/app/shared/shared.module';
 
@@ -25,6 +28,7 @@ import { SubClassDetailComponent } from './detail/detail.component';
   entryComponents: [
     SubClassFormComponent,
     SubClassDetailComponent
-  ]
+  ],
+  providers: [MaskPipe]
 })
 export class SubClassModule {}

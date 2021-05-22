@@ -7,7 +7,7 @@
     <mat-list-item>
       <mat-icon matListIcon>more_horiz</mat-icon>
       <div matLine><strong> Código </strong></div>
-      <div matLine class="info"> {{ object.id }} </div>
+      <div matLine class="info"> {{ object.id | mask:'00.00-0' }} </div>
     </mat-list-item>
     <mat-list-item>
       <mat-icon matListIcon>more_horiz</mat-icon>

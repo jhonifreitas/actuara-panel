@@ -45,6 +45,14 @@ export class ClassFormComponent implements OnInit {
     };
   }
 
+  async checkId() {
+    const value = this.controls.id.value;
+    if (this.controls.id.valid) {
+      const obj = await this._class.getById(value).catch(_ => {});
+      this.controls.id.setErrors(obj && obj.id !== this.data.id ? {exist: true} : null);
+    }
+  }
+
   async onSubmit(): Promise<void> {
     if (this.formGroup.valid) {
       this.submitting = true;

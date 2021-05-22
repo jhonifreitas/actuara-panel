@@ -4,6 +4,9 @@ import { CommonModule } from '@angular/common';
 // MATERIAL
 import { MaterialModule } from './material.module';
 
+// MASK
+import { NgxMaskModule } from 'ngx-mask';
+
 // FLEX LAYOUT
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -26,12 +29,14 @@ import { InputFormModule } from './components/input-form/input-form.module';
   ],
   imports: [
     CommonModule,
+    NgxMaskModule,
     MaterialModule,
     FlexLayoutModule,
     HighchartsChartModule
   ],
   exports: [
     PieComponent,
+    NgxMaskModule,
     AreaComponent,
     CardComponent,
     MaterialModule,

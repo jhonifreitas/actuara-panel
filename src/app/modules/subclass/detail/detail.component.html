@@ -7,7 +7,7 @@
     <mat-list-item>
       <mat-icon matListIcon>more_horiz</mat-icon>
       <div matLine><strong> Código </strong></div>
-      <div matLine class="info"> {{ object.id }} </div>
+      <div matLine class="info"> {{ object.id| mask:'00.00-0-00' }} </div>
     </mat-list-item>
     <mat-list-item>
       <mat-icon matListIcon>more_horiz</mat-icon>
@@ -16,10 +16,21 @@
     </mat-list-item>
     <mat-list-item>
       <mat-icon matListIcon>more_horiz</mat-icon>
-      <div matLine><strong> Classe </strong></div>
-      <div matLine class="info"> {{ object.classId }} </div>
+      <div matLine><strong> Tipo </strong></div>
+      <div matLine>
+        <mat-chip-list>
+          <mat-chip color="accent" selected *ngIf="object.type === 'depend'">Depende</mat-chip>
+          <mat-chip color="warn" selected *ngIf="object.type === 'required'">Obrigatório</mat-chip>
+          <mat-chip color="primary" selected *ngIf="object.type === 'notRequired'">Não obrigatório</mat-chip>
+        </mat-chip-list>
+      </div>
     </mat-list-item>
-    <mat-list-item class="h-auto">
+    <mat-list-item>
+      <mat-icon matListIcon>more_horiz</mat-icon>
+      <div matLine><strong> Classe </strong></div>
+      <div matLine class="info"> {{ object.classId| mask:'00.00-0' }} </div>
+    </mat-list-item>
+    <mat-list-item class="h-auto mb-4">
       <mat-icon matListIcon>lock</mat-icon>
       <div matLine><strong> Códigos Consema </strong></div>
       <div matLine>
@@ -28,11 +39,6 @@
         </mat-chip-list>
         <span class="info" *ngIf="!object.consemaCodes.length">---</span>
       </div>
-    </mat-list-item>
-    <mat-list-item>
-      <mat-icon matListIcon color="warn" *ngIf="!object.required">cancel</mat-icon>
-      <mat-icon matListIcon color="success" *ngIf="object.required">check_circle</mat-icon>
-      <div matLine><strong> Obrigatório </strong></div>
     </mat-list-item>
   </mat-list>
 </div>

@@ -2,6 +2,8 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
 
+import { MaskPipe } from 'ngx-mask';
+
 import { FormArray } from 'src/app/interfaces/form';
 import { Class, SubClass } from 'src/app/models/class';
 
@@ -19,8 +21,10 @@ export class SubClassFormComponent implements OnInit {
   submitting = false;
   formGroup: FormGroup;
   classes: Class[] = [];
+  types = SubClass.getTypes;
 
   constructor(
+    private mask: MaskPipe,
     private _util: UtilService,
     private _class: ClassService,
     private formBuilder: FormBuilder,
@@ -31,9 +35,9 @@ export class SubClassFormComponent implements OnInit {
     this.formGroup = this.formBuilder.group({
       id: new FormControl('', [Validators.required, Validators.minLength(7), Validators.maxLength(7)]),
       name: new FormControl('', Validators.required),
+      type: new FormControl(null, Validators.required),
       classId: new FormControl('', Validators.required),
       consemaCodes: this.formBuilder.array([]),
-      required: new FormControl(false),
     });
   }
 
@@ -50,9 +54,9 @@ export class SubClassFormComponent implements OnInit {
   get controls() {
     return this.formGroup.controls as {
       id: FormControl,
+      type: FormControl
       name: FormControl,
       classId: FormControl,
-      required: FormControl
     };
   }
 
@@ -62,6 +66,11 @@ export class SubClassFormComponent implements OnInit {
 
   async getClasses() {
     this.classes = await this._class.getAllActive();
+    this.classes.map(item => {
+      item.name = `${this.mask.transform(item.id, '00.00-0')} - ${item.name}`;
+      return item;
+    });
+    this.classes = this.classes.sort((a, b) => a.id.localeCompare(b.id));
   }
 
   addConsemaCode(value?: string) {
@@ -71,6 +80,14 @@ export class SubClassFormComponent implements OnInit {
 
   removeConsemaCode(index: number){
     this.consemaCodeControl.removeAt(index);
+  }
+
+  async checkId() {
+    const value = this.controls.id.value;
+    if (this.controls.id.valid) {
+      const obj = await this._subclass.getById(value).catch(_ => {});
+      this.controls.id.setErrors(obj && obj.id !== this.data.id ? {exist: true} : null);
+    }
   }
 
   async onSubmit(): Promise<void> {
