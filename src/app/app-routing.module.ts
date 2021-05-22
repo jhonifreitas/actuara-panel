@@ -8,6 +8,7 @@ import { PermissionGuard } from './guards/permission.guard';
 
 // COMPONENT
 import { LayoutComponent } from './layout/panel/layout.component';
+import { ImportComponent } from './modules/import/import.component';
 import { UserListComponent } from './modules/user/list/list.component';
 import { GroupListComponent } from './modules/group/list/list.component';
 import { ClassListComponent } from './modules/class/list/list.component';
@@ -41,6 +42,7 @@ const routes: Routes = [
       canActivate: [PermissionGuard],
       data: {permissions: [{page: Page.CompanyPage, role: PageRole.CanList}]},
     },
+    { path: 'importacoes', component: ImportComponent },
     { path: 'administracao', children: [
       {
         path: 'usuarios',

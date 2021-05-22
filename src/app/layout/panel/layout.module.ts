@@ -17,6 +17,7 @@ import { LayoutComponent } from './layout.component';
 import { HeaderModule } from './components/header/header.module';
 import { FooterModule } from './components/footer/footer.module';
 import { SidebarModule } from './components/sidebar/sidebar.module';
+import { ImportModule } from 'src/app/modules/import/import.module';
 import { DashboardModule } from 'src/app/modules/dashboard/dashboard.module';
 
 @NgModule({
@@ -31,6 +32,7 @@ import { DashboardModule } from 'src/app/modules/dashboard/dashboard.module';
     CommonModule,
     HeaderModule,
     FooterModule,
+    ImportModule,
     CompanyModule,
     SidebarModule,
     SubClassModule,

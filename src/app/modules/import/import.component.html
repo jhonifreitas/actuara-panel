@@ -1,0 +1,12 @@
+<div class="header">
+  <h2 class="title">Importações</h2>
+</div>
+
+<div class="mat-elevation-z8 ">
+  <mat-progress-bar mode="determinate" [value]="percent" *ngIf="loading"></mat-progress-bar>
+  
+  <div class="p-3">
+    <button mat-raised-button color="primary" [disabled]="loading" (click)="importClasses()" class="mr-2">Importar CNAE Classes</button>
+    <button mat-raised-button color="primary" [disabled]="loading" (click)="importSubClasses()">Importar CNAE SubClasses</button>
+  </div>
+</div>
