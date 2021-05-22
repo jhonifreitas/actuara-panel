@@ -118,7 +118,7 @@ export class CompanyFormComponent implements OnInit {
     return null;
   }
 
-  async checkId() {
+  async checkCNPJ() {
     const value = this.controls.cnpj.value;
     if (this.controls.cnpj.valid) {
       const obj = await this._company.getByCNPJ(value);

@@ -13,7 +13,7 @@
 
     <app-input label="Nome" [control]="controls.name"></app-input>
     <app-input label="Telefone" [control]="controls.phone" [mask]="{format: '(00) 0000-0000||(00) 00000-0000'}"></app-input>
-    <app-input label="CNPJ" [control]="controls.cnpj" [mask]="{format: '00.000.000/0000-00'}" (keyup)="checkId()"></app-input>
+    <app-input label="CNPJ" [control]="controls.cnpj" [mask]="{format: '00.000.000/0000-00'}" (keyup)="checkCNPJ()"></app-input>
     <div class="mb-2">
       <app-input label="Parceiro?" type="toggle" [control]="controls.partner"></app-input>
     </div>
