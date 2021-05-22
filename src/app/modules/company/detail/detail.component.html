@@ -1,4 +1,5 @@
 <mat-toolbar color="primary">
+  <img class="thumbnail-sm mr-1" [src]="object.image ? object.image : 'assets/image/not-found-user.png'" alt="">
   <span>Empresa</span>
 </mat-toolbar>
 <div mat-dialog-content>
@@ -11,13 +12,60 @@
     </mat-list-item>
     <mat-list-item>
       <mat-icon matListIcon>more_horiz</mat-icon>
-      <div matLine><strong> CNPJ </strong></div>
-      <div matLine class="info"> {{ object.id | mask:'CNPJ' }} </div>
+      <div matLine><strong> E-mail </strong></div>
+      <div matLine class="info"> {{ object.email }} </div>
     </mat-list-item>
     <mat-list-item>
       <mat-icon matListIcon>more_horiz</mat-icon>
-      <div matLine><strong> E-mail </strong></div>
-      <div matLine class="info"> {{ object.email }} </div>
+      <div matLine><strong> Telefone </strong></div>
+      <div matLine class="info"> {{ object.phone | mask:'(00) 0000-0000||(00) 00000-0000' }} </div>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon matListIcon>more_horiz</mat-icon>
+      <div matLine><strong> CNPJ </strong></div>
+      <div matLine class="info"> {{ object.id | mask:'00.000.000/0000-00' }} </div>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon matListIcon color="warn" *ngIf="!object.partner">cancel</mat-icon>
+      <mat-icon matListIcon color="success" *ngIf="object.partner">check_circle</mat-icon>
+      <div matLine><strong> Parceiro </strong></div>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <div mat-subheader>Endereço</div>
+    <mat-list-item>
+      <mat-icon matListIcon>more_horiz</mat-icon>
+      <div matLine><strong> Rua </strong></div>
+      <div matLine class="info"> {{ object.address.street || '---' }} </div>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon matListIcon>more_horiz</mat-icon>
+      <div matLine><strong> Número </strong></div>
+      <div matLine class="info"> {{ object.address.number || '---' }} </div>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon matListIcon>more_horiz</mat-icon>
+      <div matLine><strong> Bairro </strong></div>
+      <div matLine class="info"> {{ object.address.district || '---' }} </div>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon matListIcon>more_horiz</mat-icon>
+      <div matLine><strong> Cidade </strong></div>
+      <div matLine class="info"> {{ object.address.city || '---' }} </div>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon matListIcon>more_horiz</mat-icon>
+      <div matLine><strong> Estado </strong></div>
+      <div matLine class="info"> {{ object.address.state || '---' }} </div>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon matListIcon>more_horiz</mat-icon>
+      <div matLine><strong> CEP </strong></div>
+      <div matLine class="info"> {{ (object.address.zipcode | mask:'00000-000' || '---') }} </div>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon matListIcon>more_horiz</mat-icon>
+      <div matLine><strong> Complemento </strong></div>
+      <div matLine class="info"> {{ object.address.complement || '---' }} </div>
     </mat-list-item>
   </mat-list>
 </div>

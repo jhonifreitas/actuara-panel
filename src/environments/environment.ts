@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  hostApi: '',
+  hostApi: 'https://southamerica-east1-actuar-cnae.cloudfunctions.net/api',
   firebase: {
     apiKey: 'AIzaSyBb4SdBTSM-WzCJYYmgqprMM1SpHAg-xA4',
     authDomain: 'actuar-cnae.firebaseapp.com',

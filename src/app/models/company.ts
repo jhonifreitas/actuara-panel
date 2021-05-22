@@ -2,10 +2,12 @@ import { Base } from './base';
 
 export class Company extends Base {
   name!: string;
+  cnpj!: string;
   image?: string;
   email!: string;
-  partner!: boolean;
-  address!: Address;
+  phone!: string;
+  partner: boolean;
+  address: Address;
 
   constructor() {
     super();

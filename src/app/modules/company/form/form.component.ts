@@ -37,7 +37,8 @@ export class CompanyFormComponent implements OnInit {
     this.formGroup = this.formBuilder.group({
       partner: new FormControl(false),
       name: new FormControl('', Validators.required),
-      id: new FormControl('', [Validators.required, CustomValidator.CNPJ]),
+      phone: new FormControl('', Validators.required),
+      cnpj: new FormControl('', [Validators.required, CustomValidator.CNPJ]),
       email: new FormControl('', [Validators.required, Validators.email]),
       address: this.formBuilder.group({
         state: new FormControl(''),
@@ -76,8 +77,9 @@ export class CompanyFormComponent implements OnInit {
 
   get controls() {
     return this.formGroup.controls as {
-      id: FormControl,
+      cnpj: FormControl,
       name: FormControl,
+      phone: FormControl,
       email: FormControl,
       partner: FormControl,
       password: FormControl,
@@ -117,10 +119,10 @@ export class CompanyFormComponent implements OnInit {
   }
 
   async checkId() {
-    const value = this.controls.id.value;
-    if (this.controls.id.valid) {
-      const obj = await this._company.getById(value).catch(_ => {});
-      this.controls.id.setErrors(obj && obj.id !== this.data.id ? {exist: true} : null);
+    const value = this.controls.cnpj.value;
+    if (this.controls.cnpj.valid) {
+      const obj = await this._company.getByCNPJ(value);
+      this.controls.cnpj.setErrors(obj && obj.id !== this.data.id ? {exist: true} : null);
     }
   }
 
@@ -168,11 +170,17 @@ export class CompanyFormComponent implements OnInit {
       delete value.confirmPass;
       Object.assign(this.data, value);
 
-      await this._company.set(this.data.id, this.data);
+      await this._company.save(this.data).then(async id => {
+        if (id) this.data.id = id;
+        if (this.image && this.image.new && this.image.file) {
+          const url = await this._company.uploadImage(this.data.id, this.image.file);
+          await this._company.update(this.data.id, {image: url});
+        }
 
+        this._util.message('Empresa salva com sucesso!', 'success');
+        this.dialogRef.close(true);
+      }).catch(err => this._util.message(err, 'warn'));
       this.submitting = false;
-      this._util.message('Empresa salva com sucesso!', 'success');
-      this.dialogRef.close(true);
     } else this._util.message('Verifique os dados antes de salvar!', 'warn');
   }
 }
