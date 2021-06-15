@@ -13,7 +13,7 @@
 
       <ng-container matColumnDef="cnpj">
         <mat-header-cell mat-sort-header *matHeaderCellDef> CNPJ </mat-header-cell>
-        <mat-cell matRipple *matCellDef="let element" fxFlexAlign="stretch" (click)="openDetail(element)"> {{ element.result.cnpj | mask:'00.000.000/0000-00' }} </mat-cell>
+        <mat-cell matRipple *matCellDef="let element" (click)="openDetail(element)"> {{ element.result.numero_de_inscricao | mask:'00.000.000/0000-00' }} </mat-cell>
       </ng-container>
 
       <ng-container matColumnDef="status">
@@ -23,6 +23,11 @@
           <ng-container *ngIf="element.result.status === 'required'">Obrigatório</ng-container>
           <ng-container *ngIf="element.result.status === 'notRequired'">Não obrigatório</ng-container>
         </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="quantity">
+        <mat-header-cell mat-sort-header *matHeaderCellDef> Quantidade </mat-header-cell>
+        <mat-cell matRipple *matCellDef="let element" (click)="openDetail(element)"> {{ element.quantity }} </mat-cell>
       </ng-container>
   
       <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>

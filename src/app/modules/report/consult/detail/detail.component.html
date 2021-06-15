@@ -11,6 +11,12 @@
     </mat-list-item>
 
     <mat-list-item>
+      <mat-icon matListIcon>plus_one</mat-icon>
+      <div matLine><strong> Quantidade </strong></div>
+      <div matLine> {{ object.quantity }} </div>
+    </mat-list-item>
+
+    <mat-list-item>
       <mat-icon matListIcon>lock</mat-icon>
       <div matLine><strong> Status </strong></div>
       <div matLine>
@@ -26,23 +32,23 @@
     <mat-list-item>
       <mat-icon matListIcon>more_horiz</mat-icon>
       <div matLine><strong> Razão Social </strong></div>
-      <div matLine class="info"> {{ object.result.socialReason }} </div>
+      <div matLine class="info"> {{ object.result.nome }} </div>
     </mat-list-item>
 
     <mat-list-item>
       <mat-icon matListIcon>more_horiz</mat-icon>
       <div matLine><strong> CNPJ </strong></div>
-      <div matLine class="info"> {{ object.result.cnpj | mask:'00.000.000/0000-00' }} </div>
+      <div matLine class="info"> {{ object.result.numero_de_inscricao | mask:'00.000.000/0000-00' }} </div>
     </mat-list-item>
 
     <mat-list-item>
       <mat-icon matListIcon>more_horiz</mat-icon>
       <div matLine><strong> Atividade Princial </strong></div>
       <div matLine class="info">
-        {{ object.result.mainActivity.code | mask:'mask:'00.00-0|00.00-0-00' }} -
-        <ng-container *ngIf="object.result.mainActivity.type === 'depend'">Depende</ng-container>
-        <ng-container *ngIf="object.result.mainActivity.type === 'required'">Obrigatório</ng-container>
-        <ng-container *ngIf="object.result.mainActivity.type === 'notRequired'">Não obrigatório</ng-container>
+        {{ object.result.atividade_principal.code | mask:'00.00-0|00.00-0-00' }} -
+        <ng-container *ngIf="object.result.atividade_principal.type === 'depend'">Depende</ng-container>
+        <ng-container *ngIf="object.result.atividade_principal.type === 'required'">Obrigatório</ng-container>
+        <ng-container *ngIf="object.result.atividade_principal.type === 'notRequired'">Não obrigatório</ng-container>
       </div>
     </mat-list-item>
 
@@ -51,8 +57,8 @@
       <div matLine><strong> Atividades Secondárias </strong></div>
       <div matLine>
         <mat-chip-list>
-          <mat-chip *ngFor="let activity of object.result.secondaryActivities" [color]="activity.type === 'notRequired' ? 'primary' : 'warn'" selected>
-            {{ activity.code | mask:'mask:'00.00-0|00.00-0-00' }} -
+          <mat-chip *ngFor="let activity of object.result.atividades_secundarias" [color]="activity.type === 'notRequired' ? 'primary' : 'warn'" selected>
+            {{ activity.code | mask:'00.00-0|00.00-0-00' }} -
             <ng-container *ngIf="activity.type === 'depend'">Depende</ng-container>
             <ng-container *ngIf="activity.type === 'required'">Obrigatório</ng-container>
             <ng-container *ngIf="activity.type === 'notRequired'">Não obrigatório</ng-container>

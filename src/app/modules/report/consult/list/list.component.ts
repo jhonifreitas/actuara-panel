@@ -28,7 +28,7 @@ export class ReportConsultListComponent implements OnInit {
   loading = false;
   filter!: string;
   dataSource!: MatTableDataSource<Consult>;
-  displayedColumns: string[] = ['company', 'cnpj', 'status'];
+  displayedColumns: string[] = ['company', 'cnpj', 'status', 'quantity'];
 
   constructor(
     private _util: UtilService,

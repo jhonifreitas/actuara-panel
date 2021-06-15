@@ -22,7 +22,7 @@ export class AuthGuard implements CanActivate {
     return new Promise(resolve => {
       this.auth.onAuthStateChanged(async fbUser => {
         if (fbUser) {
-          const user = await this._user.getById(fbUser.uid);
+          const user = await this._user.getById(fbUser.uid).catch(_ => {});
           if (user) {
             this._storage.setUser(user);
             resolve(true);
