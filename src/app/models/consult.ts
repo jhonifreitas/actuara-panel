@@ -33,7 +33,7 @@ class Activity {
   code!: string;
   text!: string;
   type: 'required' | 'notRequired' | 'depend';
-  
+
   constructor() {
     this.type = 'depend';
   }
