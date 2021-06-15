@@ -34,9 +34,14 @@ export class SidebarComponent implements OnInit {
         page: Page.CNAESubClassPage, role: PageRole.CanList}
       },
     ]},
-    { title: 'Empresas', url: 'empresas', icon: 'business', hidden: false, permission: {
+    { title: 'Escritórios', url: 'empresas', icon: 'business', hidden: false, permission: {
       page: Page.CompanyPage, role: PageRole.CanList}
     },
+    { title: 'Relatórios', icon: 'receipt_long', hidden: false, subItems: [
+      { title: 'Consultas', url: 'relatorio/consultas', icon: 'http', hidden: false, permission: {
+        page: Page.ReportConsultPage, role: PageRole.CanList}
+      }
+    ]},
     { title: 'Administrações', icon: 'verified_user', hidden: false, subItems: [
       { title: 'Usuários', url: '/administracao/usuarios', icon: 'person', hidden: false, permission: {
         page: Page.UserPage, role: PageRole.CanList}

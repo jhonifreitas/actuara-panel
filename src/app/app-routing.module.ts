@@ -15,6 +15,7 @@ import { ClassListComponent } from './modules/class/list/list.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { CompanyListComponent } from './modules/company/list/list.component';
 import { SubClassListComponent } from './modules/subclass/list/list.component';
+import { ReportConsultListComponent } from './modules/report/consult/list/list.component';
 
 const routes: Routes = [
   { path: 'auth', loadChildren: () => import('./modules/auth/auth.module').then(m => m.AuthModule) },
@@ -42,6 +43,15 @@ const routes: Routes = [
       canActivate: [PermissionGuard],
       data: {permissions: [{page: Page.CompanyPage, role: PageRole.CanList}]},
     },
+    { path: 'relatorio', children: [
+      { path: '', redirectTo: 'consultas', pathMatch: 'full' },
+      {
+        path: 'consultas',
+        component: ReportConsultListComponent,
+        canActivate: [PermissionGuard],
+        data: {permissions: [{page: Page.ReportConsultPage, role: PageRole.CanList}]},
+      },
+    ] },
     { path: 'importacoes', component: ImportComponent },
     { path: 'administracao', children: [
       {

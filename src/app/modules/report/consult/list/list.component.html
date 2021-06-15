@@ -1,0 +1,40 @@
+<div class="header">
+  <h2 class="title">Relatório de consultas</h2>
+</div>
+
+<div class="container mat-elevation-z8 ">
+  <div class="table-responsive">
+    <mat-table matSort [dataSource]="dataSource">
+  
+      <ng-container matColumnDef="company">
+        <mat-header-cell mat-sort-header *matHeaderCellDef> Escritório </mat-header-cell>
+        <mat-cell matRipple *matCellDef="let element" fxFlexAlign="stretch" (click)="openDetail(element)"> {{ element.company.name }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="cnpj">
+        <mat-header-cell mat-sort-header *matHeaderCellDef> CNPJ </mat-header-cell>
+        <mat-cell matRipple *matCellDef="let element" fxFlexAlign="stretch" (click)="openDetail(element)"> {{ element.result.cnpj | mask:'00.000.000/0000-00' }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="status">
+        <mat-header-cell mat-sort-header *matHeaderCellDef> Status </mat-header-cell>
+        <mat-cell matRipple *matCellDef="let element" (click)="openDetail(element)">
+          <ng-container *ngIf="element.result.status === 'depend'">Depende</ng-container>
+          <ng-container *ngIf="element.result.status === 'required'">Obrigatório</ng-container>
+          <ng-container *ngIf="element.result.status === 'notRequired'">Não obrigatório</ng-container>
+        </mat-cell>
+      </ng-container>
+  
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+      
+      <div class="noData" *matNoDataRow fxLayout="row">
+        <div fxFlex="grow" fxFlexAlign="center" class="text-center">Nenhum registro encontrado!</div>
+      </div>
+    </mat-table>
+  </div>
+  
+  <mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 20, 50, 100]" showFirstLastButtons></mat-paginator>
+</div>

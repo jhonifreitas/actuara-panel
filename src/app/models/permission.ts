@@ -22,6 +22,8 @@ export class Permission {
         return 'CNAE - Classe';
       case Page.CNAESubClassPage:
         return 'CNAE - SubClasse';
+      case Page.ReportConsultPage:
+        return 'Relatório - Consultas';
     }
   }
 
@@ -55,6 +57,7 @@ export enum Page {
   CompanyPage = 'company-page',
   CNAEClassPage = 'cnaeClass-page',
   CNAESubClassPage = 'caneSubclass-page',
+  ReportConsultPage = 'reportConsult-page',
 }
 
 export enum PageRole {

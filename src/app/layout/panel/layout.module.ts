@@ -11,6 +11,7 @@ import { GroupModule } from 'src/app/modules/group/group.module';
 import { ClassModule } from 'src/app/modules/class/class.module';
 import { CompanyModule } from 'src/app/modules/company/company.module';
 import { SubClassModule } from 'src/app/modules/subclass/subclass.module';
+import { ReportConsultModule } from 'src/app/modules/report/consult/consult.module';
 
 // DEFAULT
 import { LayoutComponent } from './layout.component';
@@ -38,6 +39,7 @@ import { DashboardModule } from 'src/app/modules/dashboard/dashboard.module';
     SubClassModule,
     DashboardModule,
     MatSidenavModule,
+    ReportConsultModule,
   ]
 })
 export class LayoutPanelModule { }
